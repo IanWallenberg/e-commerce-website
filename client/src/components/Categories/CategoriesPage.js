@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Categories Page
 export const CategoriesPage = () => {
   return (
     <div><h1>CategoriesPage</h1>
