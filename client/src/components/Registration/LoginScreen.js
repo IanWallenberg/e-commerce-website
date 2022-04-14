@@ -80,7 +80,7 @@ export const LoginScreen = () => {
   return (
     <Background>
       <Flex>
-      <Title>Log in</Title>
+      <Title>Log in here</Title>
     <Paragraph>Username:</Paragraph>
 <Form type="text" name="uname" required />
 <Paragraph>Password:</Paragraph>
