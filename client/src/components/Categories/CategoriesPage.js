@@ -4,7 +4,8 @@ import Nav from '../ui/Nav';
 import OnEar from './Img/man-onear.jpg';
 import InEar from './Img/inear.jpg';
 import OnEarOverLay from './Img/HP3a.png';
-import InEarOverlay from './Img/EP3.png'
+import InEarOverlay from './Img/EP3.png';
+import Newsletter from '../Newsletter/Newsletter';
 
 // Components for the page 
 
@@ -47,8 +48,7 @@ opacity: .5;
 const DivText = styled.div`
 width: 100%;
 height:20px;
-margin-top:-240px;
-
+margin-top:-200px;
 
 `
 const DivH1= styled.h1`
@@ -57,13 +57,14 @@ margin-left:30px;
 font-family:'verdana';
 font-size: 50px;
 font-weight:800;
-opacity:1 !important;`
+z-index:2; `
 
 const DivP= styled.p`
 color: black;
 font-family: verdana;
 font-size:16px;
-margin-left:30px;`
+margin-left:30px;
+`
 
 const Button = styled.button`
 background-color:  #FEC5BB;
@@ -75,6 +76,13 @@ margin-left:30px;
 color: black;
 padding:10px 20px;
 border-radius: 20px;
+margin-top: -10px;
+
+&:hover {
+  background-color: #CEB2B2;
+  transition: all 0.5s ease;
+  
+}
 `
 
 
@@ -108,6 +116,10 @@ background-position: right ;
 
 `
 
+
+ const FooterContainer = styled.div`
+ `
+
 export const CategoriesPage = () => {
   return (
     <Container>
@@ -133,14 +145,15 @@ JUST MUSIC. NOTHING ELSE.
 It just you and the music when using the WH-1000XM4 headphones. Try the easy way to less noise and cleaner sound, where smart technology automatically makes the experience more personal. </DivP>
          <Button> SEE ALL </Button>
          </DivText> 
-         
         </Div3>
         <Div4></Div4>
-      </CategoriesInEar>
-    </Container>
+      </CategoriesInEar> 
+      <FooterContainer>
+       <Newsletter/>  
       
-
-      
+      </FooterContainer>
+       
+    </Container>   
    
     
   )

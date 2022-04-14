@@ -19,7 +19,7 @@ background-color: white;
   // align-items: center;
   padding: 50px;
   width: 450px;
-  height 400px;
+  height: 400px;
 `
 
 // const Box = styled.div`
