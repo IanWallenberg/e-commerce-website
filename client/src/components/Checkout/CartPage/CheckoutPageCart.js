@@ -7,7 +7,7 @@ export const CheckoutPage = () => {
   return (
     <>
       <div id="Main__container" className="container-fluid">
-        <div className="container-sm flex-wrap d-flex justify-content-center align-items-center p-3">
+        <div className="container-sm flex-nowrap d-flex justify-content-center align-items-center p-3">
           <span id="dot__Done" className="mx-2">
             <img
               id="done__Image"
@@ -22,21 +22,19 @@ export const CheckoutPage = () => {
           <span id="with-line"></span>
 
           <span id="dot" className="mx-2"></span>
-          <div className="container-sm d-flex justify-content-center align-items-center mt-3 w-75">
-            <div className="row w-75">
-              <h3 id="Title" className="text-center col-5">
-                Cart
-              </h3>
+        </div>
+        <div className="container-sm d-flex flex-nowrap justify-content-center align-items-center">
+          <h3 id="Title" className="text-start pe-5">
+            Cart
+          </h3>
 
-              <h3 id="Title" className="text-center col-2 ">
-                Delivery
-              </h3>
+          <h3 id="Title" className="text-center ms-5 ps-5">
+            Delivery
+          </h3>
 
-              <h3 id="Title" className="text-center col-5">
-                Payment
-              </h3>
-            </div>
-          </div>
+          <h3 id="Title" className="text-center ms-5">
+            Payment
+          </h3>
         </div>
       </div>
       <div className="container fluid text-center">
