@@ -18,11 +18,10 @@ export const EcommerceRouter = () => {
 
         <Route path="/checkout-Cart" element={<CheckoutCart />} />
         <Route path="/checkout-Delivery" element={<CheckoutDelivery />} />
-        <Route path="/checkout-Payment" element={<CheckoutPayment />} /
+        <Route path="/checkout-Payment" element={<CheckoutPayment />} />
         <Route path="/categories" element={<CategoriesPage />} />
         <Route path="/categories" element={<Newsletter />} />
         <Route path="/categories" element={<Footer />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
 
