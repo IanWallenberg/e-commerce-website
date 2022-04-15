@@ -1,0 +1,34 @@
+/* article {
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-rows: minmax(100px, auto);
+    background: grey;
+}
+.image,
+.text {
+    background: red;
+    height: 100px;
+}
+.image {
+    background: green;
+}
+.text:nth-of-type(3) {
+    background: magenta;
+}
+.image:nth-of-type(4) {
+    background: blue;
+}
+@media screen and (min-width: 1025px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: grey;
+    }
+    .text:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+} 
+
+TRYING OUT STUFF WITH GRID
+*/
