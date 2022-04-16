@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CheckoutPage } from "../components/Checkout/CartPage/CheckoutPageCart";
 import { LandingPage } from "../components/LandingPage/LandingPage";
-import {CategoriesPage} from '../components/Categories/CategoriesPage';
+import { CategoriesPage } from "../components/Categories/CategoriesPage";
 import { LoginScreen } from "../components/Registration/LoginScreen";
 import { RegisterScreen } from "../components/Registration/RegisterScreen";
+import { SingleDescription } from "../components/SingleProducts/SingleDescription";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/ui/Footer";
 
@@ -20,6 +21,8 @@ export const EcommerceRouter = () => {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
 
+        {/* SINGLE ITEM */}
+        <Route path="/singledescription" element={<SingleDescription />} />
       </Routes>
     </Router>
   );
