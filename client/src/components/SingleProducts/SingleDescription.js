@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import OnEar from "../Categories/Img/HP2.jpg";
+// import OnEar from "../Categories/Img/HP2.jpg";
 import Nav from "../ui/Nav";
+import Slider from "./Slider";
 
 const MainContainer = styled.div`
   display: flex;
@@ -16,14 +17,21 @@ const PictureWrapper = styled.div`
   display: flex;
   justify-content: center;
   overflow: hidden;
+  width: 90%;
   ${"" /* border: 5px yellow solid; */}
 `;
 
-const Picture = styled.img`
-  width: 90%;
-  object-fit: cover;
-  ${"" /* border: 5px orange solid; */}
-`;
+// const Picture = styled.img`
+//   width: 90%;
+//   object-fit: cover;
+//    border: 5px orange solid;
+// `;
+
+const pictureStyle = {
+  width: "90%",
+  objectFit: "cover",
+  border: "5px orange solid"
+};
 
 const DescriptionWrapper = styled.div`
   display: flex;
@@ -53,7 +61,8 @@ export const SingleDescription = () => {
 
       <MainContainer>
         <PictureWrapper>
-          <Picture src={OnEar} alt="headphones" />
+          {/* <Picture src={OnEar} alt="headphones" /> */}
+          <Slider style={{pictureStyle}}></Slider>
         </PictureWrapper>
 
         <DescriptionWrapper>
