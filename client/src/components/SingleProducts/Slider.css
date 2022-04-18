@@ -1,10 +1,8 @@
 .container-slider {
   max-width: 700px;
   height: 500px;
-  /* margin: 100px auto 0; */
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 700px) {
   .container-slider {
@@ -14,9 +12,6 @@
 .slide {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
-  /* display: none; */
-  /* opacity: 0; */
   transition: opacity ease-in-out 0.4s;
 }
 .slide img {
@@ -24,10 +19,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* .active-anim {
-  opacity: 1 ;
-  display: block;
-} */
+
 
 .btn-slide {
   width: 60px;
