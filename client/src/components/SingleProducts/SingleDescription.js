@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 // import OnEar from "../Categories/Img/HP2.jpg";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
-
+import dataSlider from "../../OnEarHeadphones.json";
 
 const MainContainer = styled.div`
   display: flex;
@@ -22,16 +22,10 @@ const PictureWrapper = styled.div`
   ${"" /* border: 5px yellow solid; */}
 `;
 
-// const Picture = styled.img`
-//   width: 90%;
-//   object-fit: cover;
-//    border: 5px orange solid;
-// `;
-
 const pictureStyle = {
   width: "90%",
   objectFit: "cover",
-  border: "5px orange solid"
+  border: "5px orange solid",
 };
 
 const DescriptionWrapper = styled.div`
@@ -56,42 +50,48 @@ const Button = styled.button`
 `;
 
 export const SingleDescription = () => {
-  const [slideIndex, setSlideIndex] = useState(0)
-  const [itemIndex, setItemIndex] = useState(4)
-  const [numberOfImages, setNumberOfImages] = useState(2)
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [itemIndex, setItemIndex] = useState(1);
+  const [numberOfImages, setNumberOfImages] = useState(2);
 
   const nextSlide = () => {
-    if(slideIndex !== numberOfImages - 1){
-        setSlideIndex(slideIndex + 1)
-    } 
-    else if (slideIndex === numberOfImages - 1){
-        setSlideIndex(0)
+    if (slideIndex !== numberOfImages - 1) {
+      setSlideIndex(slideIndex + 1);
+    } else if (slideIndex === numberOfImages - 1) {
+      setSlideIndex(0);
     }
-}
+  };
 
-const prevSlide = () => {
-    if(slideIndex !== 0){
-        setSlideIndex(slideIndex - 1)
+  const prevSlide = () => {
+    if (slideIndex !== 0) {
+      setSlideIndex(slideIndex - 1);
+    } else if (slideIndex === 0) {
+      setSlideIndex(numberOfImages - 1);
     }
-    else if (slideIndex === 0){
-        setSlideIndex(numberOfImages - 1)
-    }
-}
+  };
 
-const moveDot = index => {
-    setSlideIndex(index)
-}
+  const moveDot = (index) => {
+    setSlideIndex(index);
+  };
   return (
     <>
       <Nav />
 
       <MainContainer>
         <PictureWrapper>
-          <Slider style={{pictureStyle}} slideIndex={slideIndex} itemIndex={itemIndex} numberOfImages={numberOfImages} moveDot ={moveDot} nextSlide={nextSlide} prevSlide={prevSlide}></Slider>
+          <Slider
+            style={{ pictureStyle }}
+            slideIndex={slideIndex}
+            itemIndex={itemIndex}
+            numberOfImages={numberOfImages}
+            moveDot={moveDot}
+            nextSlide={nextSlide}
+            prevSlide={prevSlide}
+          ></Slider>
         </PictureWrapper>
 
         <DescriptionWrapper>
-          <h3>Bose quite comfort</h3>
+          <h3>{dataSlider[itemIndex].name}</h3>
           <h6> FREQUENCY RESh6ONSE </h6>
           <p>
             (BLUETOOTH® COMMUNICATION) 20 Hz–20,000 Hz (44.1 kHz Sampling)/20
