@@ -30,8 +30,8 @@ const DescriptionWrapper = styled.div`
   width: 50%;
   padding: 6%;
   background-color: #f8edeb;
-  font-size: 1rem;
   ${"" /* border: 5px blue solid; */}
+  font-size: 12px;
 `;
 
 const Button = styled.button`
@@ -70,7 +70,7 @@ export const SingleDescription = () => {
   return (
     <>
       <Nav />
-      <MainContainer className="MainContainer">
+      <MainContainer className="mainContainer">
         <Slider
           className="Slider"
           style={{ pictureStyle }}
@@ -82,8 +82,8 @@ export const SingleDescription = () => {
           prevSlide={prevSlide}
         ></Slider>
 
-        <DescriptionWrapper className="DescriptionWrapper">
-          <h3>{dataSlider[itemIndex].name}</h3>
+        <DescriptionWrapper className="descriptionWrapper">
+          <h4>{dataSlider[itemIndex].name}</h4>
           <h6> FREQUENCY RESh6ONSE </h6>
           <p>
             (BLUETOOTH® COMMUNICATION) 20 Hz–20,000 Hz (44.1 kHz Sampling)/20
@@ -97,7 +97,7 @@ export const SingleDescription = () => {
           <p> Closed, dynamic</p>
 
           <h3>2800.00 SEK (VAT)</h3>
-          <Button className="AddToCartBtn">ADD TO CART</Button>
+          <Button className="addToCartBtn">ADD TO CART</Button>
         </DescriptionWrapper>
       </MainContainer>
     </>
