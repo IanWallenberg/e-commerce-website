@@ -20,8 +20,6 @@ export const EcommerceRouter = () => {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
-
-        {/* SINGLE ITEM */}
         <Route path="/singledescription" element={<SingleDescription />} />
       </Routes>
     </Router>
