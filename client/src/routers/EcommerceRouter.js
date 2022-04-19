@@ -10,6 +10,8 @@ import { RegisterScreen } from "../components/Registration/RegisterScreen";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/ui/Footer";
 
+import { AccountPage } from "../components/ProfilePage/AccountPage";
+
 export const EcommerceRouter = () => {
   return (
     <Router>
@@ -22,7 +24,10 @@ export const EcommerceRouter = () => {
         <Route path="/categories" element={<Newsletter />} />
         <Route path="/categories" element={<Footer />} />
         <Route path="/login" element={<LoginScreen />} />
-        <Route path="/register" element={<RegisterScreen />} />
+
+        <Route path="/registerscreen" element={<RegisterScreen />} />
+        <Route path="/accountpage" element={<AccountPage />} />
+        
       </Routes>
     </Router>
   );
