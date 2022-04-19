@@ -14,8 +14,8 @@ export default function Slider({slideIndex, itemIndex, numberOfImages, moveDot, 
             />
         </div>
       
-          <BtnSlider moveSlide={nextSlide} direction={"next"} />
-          <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
+          {/* <BtnSlider moveSlide={nextSlide} direction={"next"} />
+          <BtnSlider moveSlide={prevSlide} direction={"prev"}/> */}
 
           <div className="container-dots">
               {Array.from({length: numberOfImages}).map((item, index) => (

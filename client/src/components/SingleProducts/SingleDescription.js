@@ -10,16 +10,9 @@ const MainContainer = styled.div`
   height: 90vh;
   ${"" /* border: 1px red solid; */}
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-`;
-
-const PictureWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  width: 90%;
-  ${"" /* border: 5px yellow solid; */}
+  justify-content: space-around;
+  width: 100vw;
+  background-color: #f8edeb;
 `;
 
 const pictureStyle = {
@@ -33,11 +26,12 @@ const DescriptionWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  ${"" /* border: 5px blue solid;  */}
-  height: 95vh;
+  height: 100%;
   width: 50%;
   padding: 6%;
   background-color: #f8edeb;
+  font-size: 1rem;
+  ${"" /* border: 5px blue solid; */}
 `;
 
 const Button = styled.button`
@@ -76,21 +70,19 @@ export const SingleDescription = () => {
   return (
     <>
       <Nav />
+      <MainContainer className="MainContainer">
+        <Slider
+          className="Slider"
+          style={{ pictureStyle }}
+          slideIndex={slideIndex}
+          itemIndex={itemIndex}
+          numberOfImages={numberOfImages}
+          moveDot={moveDot}
+          nextSlide={nextSlide}
+          prevSlide={prevSlide}
+        ></Slider>
 
-      <MainContainer>
-        <PictureWrapper>
-          <Slider
-            style={{ pictureStyle }}
-            slideIndex={slideIndex}
-            itemIndex={itemIndex}
-            numberOfImages={numberOfImages}
-            moveDot={moveDot}
-            nextSlide={nextSlide}
-            prevSlide={prevSlide}
-          ></Slider>
-        </PictureWrapper>
-
-        <DescriptionWrapper>
+        <DescriptionWrapper className="DescriptionWrapper">
           <h3>{dataSlider[itemIndex].name}</h3>
           <h6> FREQUENCY RESh6ONSE </h6>
           <p>
@@ -105,7 +97,7 @@ export const SingleDescription = () => {
           <p> Closed, dynamic</p>
 
           <h3>2800.00 SEK (VAT)</h3>
-          <Button>ADD TO CART</Button>
+          <Button className="AddToCartBtn">ADD TO CART</Button>
         </DescriptionWrapper>
       </MainContainer>
     </>
