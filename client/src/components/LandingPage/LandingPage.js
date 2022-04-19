@@ -5,6 +5,18 @@ import MainPage from './MainPage';
 
 const Container = styled.div`
 height: 100vh;
+overflow: hidden;
+background-color: white;
+`
+
+const Shape = styled.div`
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+clip-path: polygon(73% 0%, 55% 100%, 0% 100%, 0% 0%);
+z-index: 1;
 background-color: #F8EDEB;
 `
 
@@ -13,6 +25,7 @@ export const LandingPage = () => {
     <Container>
     <NavBarLanding/>
     <MainPage/>
+    <Shape/>
     </Container>
   )
 }
