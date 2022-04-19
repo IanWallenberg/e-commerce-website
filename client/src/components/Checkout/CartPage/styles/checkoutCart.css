@@ -14,7 +14,7 @@
 #with-line {
   width: 100px;
   height: 15px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   opacity: 0.22;
   top: 1px;
   border-radius: 50px;
@@ -23,7 +23,7 @@
 #dot__Done {
   height: 90px;
   width: 90px;
-  background-color: #FEC5BB;
+  background-color: #fec5bb;
   border-radius: 50%;
   border: 5px;
 }
@@ -52,6 +52,10 @@
 #proceed__Button {
   background-color: #404040;
   color: white;
+  font-family: "Koulen", sans-serif;
+}
+
+#name__product {
   font-family: "Koulen", sans-serif;
 }
 /*# sourceMappingURL=checkoutCart.css.map */

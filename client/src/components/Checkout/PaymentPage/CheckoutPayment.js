@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCreditCardAlt } from "@fortawesome/free-solid-svg-icons";
+import "./styles/checkoutPayment.css";
 
 export const CheckoutPayment = () => {
   return (
@@ -53,6 +54,26 @@ export const CheckoutPayment = () => {
       </div>
       <div className="container text-center">
         <FontAwesomeIcon icon={faCreditCardAlt} className="fs-1 p-5" />
+      </div>
+      <div className="container border rounded shadow-lg d-flex justify-content-around">
+        <div className="container">
+          <h3 className="fw-bold p-3"> Order Summary </h3>
+          <div className="card shadow">
+            <h5 className="fw-bold"> DETAILS</h5>
+            <img
+                className="m-3 bg-dark w-25"
+                src="./assets/Checkout Assets/Done.png"
+                alt="Card cap"
+              />
+              <p id="name__product" className="mt-3">
+                Sony -wh1000xm4 <br /> 3000 kr <br /> QTY: 30
+              </p>
+              <hr/>
+          </div>
+        </div>
+        <div className="container">
+          <h3 className="fw-bold p-3"> Payment Details </h3>
+        </div>
       </div>
     </>
   );
