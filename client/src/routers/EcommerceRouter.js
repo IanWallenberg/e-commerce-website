@@ -25,7 +25,7 @@ export const EcommerceRouter = () => {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
-        <Route path="/SingleDescription" element={<AccountPage />} />
+        <Route path="/SingleDescription" element={<SingleDescription />} />
         
       </Routes>
     </Router>

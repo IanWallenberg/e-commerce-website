@@ -115,8 +115,6 @@ background-size: cover;
 background-position: right ;
 
 `
-
-
  const FooterContainer = styled.div`
  `
 
