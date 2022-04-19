@@ -13,7 +13,14 @@ import logoIcon from '../Categories/Img/logo.png';
 
 const Container= styled.div`
 display: flex;
-background-color: white;`
+background-color: white;
+
+@media only screen and (max-width:380px) {
+  flex-direction: column; 
+    
+}
+
+`
 
 const Left = styled.div`
 flex:1;
@@ -28,6 +35,10 @@ const Logo = styled.div`
 const Description =styled.p`
 margin: 0px 0px;
 font-family: verdana;
+@media only screen and (max-width:380px) {
+ font-size:12px;
+    
+}
 `
 
 const SocialContainer =styled.div`
@@ -47,17 +58,34 @@ justify-content: center;
 margin-right: 20px;
 cursor: pointer;
 
+@media only screen and (max-width:380px) {
+  width: 30px;
+  height: 30px;
+    
+}
+
 `
 
 const Center= styled.div`
 flex:1;
-padding: 20px;`
+padding: 20px;
+
+@media only screen and (max-width:380px) {
+   display: none; 
+    
+}
+`
 
 const Title =styled.h3`
 margin-bottom: 10px;
 margin-top: 20px;
 font-family: Verdana;
 font-size: 20px;
+
+@media only screen and (max-width:380px) {
+  font-size: 16px;
+    
+}
 
 `
 
@@ -70,6 +98,7 @@ flex-wrap:wrap;
 font-family:verdana;
 margin-top: 20px;`
 
+
 const ListItem = styled.li`
 width: 50%;
 margin-bottom: 10px;
@@ -78,7 +107,12 @@ margin-bottom: 10px;
 
 const Right= styled.div`
   flex: 1;
-  padding: 20px;`
+  padding: 20px;
+  
+  @media only screen and (max-width:380px) {
+   background-color: #fff3f1 ; 
+    
+}`
 
 const ContactItem = styled.div`
   margin-bottom: 20px;
@@ -86,10 +120,22 @@ const ContactItem = styled.div`
   align-items: center;
   font-family:verdana;
   margin-top: 20px;
+  font-size: 16px;
+
+  @media only screen and (max-width:380px) {
+    font-size: 14px ; 
+    margin:15px 0px;
+}
 `
 
 const Payment = styled.image`
-width: 50%;`
+width: 50%;
+@media only screen and (max-width:380px) {
+    width:80px; 
+    
+}
+
+`
 
 const Footer = () => {
   return ( 
@@ -147,6 +193,6 @@ const Footer = () => {
       
     </Container>
    );
-}
+};
  
 export default Footer;
