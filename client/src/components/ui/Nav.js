@@ -6,15 +6,24 @@ import SearchIcon from '@mui/icons-material/Search';
 import ProfileIcon from '@mui/icons-material/PermIdentity';
 import Image from '../Categories/Img/logo.png';
 
+
 const Container = styled.div`
-height:10%;
-background-color: #F8EDEB;`
+width:100%;
+height:10vh;
+background-color: #F8EDEB;
+
+`
 
 const Wrapper = styled.div`
 padding: 10px 20px;
 display: flex;
 justify-content: space-between;
-align-items:center;`
+align-items:center;
+@media only screen and (max-width:380px) {
+    padding: 10px 10px;
+}
+
+`
 
 const Left = styled.div`
 width:50%;

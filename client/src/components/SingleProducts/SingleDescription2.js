@@ -30,12 +30,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: right;
   height: 100vh;
   width: 100%;
   padding: 6%;
   background-color: #f8edeb;
   font-size: 12px;
+  padding : 30px
 `
 
 const Button = styled.button`
@@ -54,8 +55,8 @@ const Button = styled.button`
     position: relative;
     overflow: hidden;
     width:100%;
-    height:80%;
-    margin: 10px;
+    height:100%;
+    margin: 20px;
 
     `
 
