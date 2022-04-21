@@ -49,7 +49,7 @@ export const CheckoutDelivery = () => {
         <FontAwesomeIcon icon={faTruck} className="fs-1 p-5" />
       </div>
       {/* CONTAINER BEGINS */}
-      <div className="container border rounded shadow-lg">
+      <div className="container border rounded shadow-lg mb-5">
         <h1 id="title__Delivery" className="text-center fw-light mt-3">
           DELIVERY
         </h1>
