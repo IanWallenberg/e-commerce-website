@@ -1,11 +1,18 @@
 [
     {
         "name": "SENNHEISER MOMENTUM 3 WIRELESS NOISE",
-        "image1": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Isofront_RGB_redx_182d191a-d8a2-45ea-b2a5-821b05c4c0d5_1200x1200.jpg?v=1603999216",
-        "image2": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Folded_RGB_redx_1200x1200.jpg?v=1601993881",
+        "title":"bla bla",
         "price": 150.99,
-        "quantity": 30
+        "description":"Bla bla bla",
+        "Black": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Isofront_RGB_redx_182d191a-d8a2-45ea-b2a5-821b05c4c0d5_1200x1200.jpg?v=1603999216",
+        "quantityBlack": 30,   
+
+        "White":"https://static.hifiklubben.com/498f4e/globalassets/product-images/se/senmomentum3wh_1.jpg?width=2500",
+        "quantityWhite": 20
     },
+
+
+
     {
         "name": "GRADO GW100 V2 WIRELESS OPEN-BACK",
         "image1": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/4E-GW100-2_1200x1200.jpg?v=1603921352",
