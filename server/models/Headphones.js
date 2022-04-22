@@ -1,11 +1,22 @@
 const mongoose = require("mongoose");
 
 const HeadphonesSchema = mongoose.Schema({
-  name: String,
-  image1: String,
-  image2: String,
+  brand: String,
+  brandModel: String,
   price: Number,
-  quantity: Number,
+  color: {
+    primary: {
+      colorName: String,
+      images: [],
+      quantity: Number,
+    },
+
+    secondary: {
+      colorName: String,
+      images: [],
+      quantity: Number,
+    },
+  },
 });
 
 const Headphones = mongoose.model("Headphones", HeadphonesSchema);
