@@ -1,5 +1,28 @@
 [
     {
+        "brand": "FINAL AUDIO",
+        "brandModel": "A4000 EARPHONES",
+        "price": 159.0,
+        "color": {
+          "primary": {
+            "colorName": "Navy Blue",
+            "images": [
+              "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/7J1A6656x_1200x1200.jpg?v=1610731869",
+              "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/7J1A6741x_1200x1200.jpg?v=1610731869"
+            ],
+            "quantity": 20
+          },
+          "secondary": {
+            "colorName": "Metal Black",
+            "images": [
+              "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/7J1A6656x_1200x1200.jpg?v=1610731869",
+              "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/7J1A6741x_1200x1200.jpg?v=1610731869"
+            ],
+            "quantity": 18
+          }
+        }
+      },
+    {
         "name": "SENNHEISER MOMENTUM 3 WIRELESS NOISE",
         "title":"bla bla",
         "price": 150.99,
