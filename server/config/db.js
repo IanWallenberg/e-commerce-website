@@ -17,10 +17,4 @@ const connectDB = async () => {
   }
 };
 
-//  const connectDB = mongoose.connect(DB,{
-
-// }).then(()=>{
-//     console.log('MongoDB Connection Successful');
-// }).catch((err)=> console.log('Connection Failed'))
-
 module.exports = connectDB;
