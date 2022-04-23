@@ -1,261 +1,507 @@
 [
-    {
-        "brand": "FINAL AUDIO",
-        "brandModel": "D8000 PRO EDITION",
-        "price": 499.00,
-        "color": {
-          "primary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/19Q3_new_D8000-Pro-Edition_web_materials_gallery-POPUP_02_1200x1200_1a5ef54e-cbda-4952-9151-18a5c0da7962_1200x1200.png?v=1650556551",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/final_d8000pro_slv_2_1200x1200.jpg?v=1650556551"
-            ],
-            "quantity": 40
-          },
-          "secondary": {
-            "colorName": "Silver",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/19Q3_new_D8000-Pro-Edition_web_materials_gallery-POPUP_01_1200x1200_1_1200x1200.png?v=1650556551",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/final_sfc_silver_35_15_1_1200x1200.jpg?v=1572627591"
-            ],
-            "quantity": 30
-          }
-        }
+  {
+    "brand": "FINAL AUDIO",
+    "brandModel": "D8000 PRO EDITION",
+    "price": 499.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/19Q3_new_D8000-Pro-Edition_web_materials_gallery-POPUP_02_1200x1200_1a5ef54e-cbda-4952-9151-18a5c0da7962_1200x1200.png?v=1650556551",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/final_d8000pro_slv_2_1200x1200.jpg?v=1650556551"
+        ],
+        "quantity": 40
       },
-    {
-        "brand": "FOCAL",
-        "brandModel": "WIRELESS BLUETOOTH OVER-EAR",
-        "price": 499.00,
-        "color": {
-          "primary": {
-            "colorName": "Purple",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-purple_1200x1200.jpg?v=1630442993",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-purple-fold_1200x1200.jpg?v=1630442993"
-            ],
-            "quantity": 20
-          },
-          "secondary": {
-            "colorName": "Olive",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive_1200x1200.jpg?v=1630442993",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive-fold_1200x1200.jpg?v=1630442993"
-            ],
-            "quantity": 38
-          }
-        }
-      },
-      {
-        "brand": "SHURE",
-        "brandModel": "AONIC 50 WIRELESS NOISE CANCELLING",
-        "price": 239.00,
-        "color": {
-          "primary": {
-            "colorName": "Brown",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50br1_1200x1200.jpg?v=1605909827",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50br2_1200x1200.jpg?v=1605909827"
-            ],
-            "quantity": 10
-          },
-          "secondary": {
-            "colorName": "White/Tan",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50wh1_1200x1200.jpg?v=1605909827",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50wh2_1200x1200.jpg?v=1605909827"
-            ],
-            "quantity": 30
-          }
-        }
-      },
-    {
-        "brand": "SENNHEISER",
-        "brandModel": "MOMENTUM 3 WIRELESS",
-        "price": 399.95,
-        "color": {
-          "primary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Isofront_RGB_redx_182d191a-d8a2-45ea-b2a5-821b05c4c0d5_1200x1200.jpg?v=1603999216",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Folded_RGB_redx_1200x1200.jpg?v=1601993881"
-            ],
-            "quantity": 20
-          },
-          "secondary": {
-            "colorName": "White",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_SandyWhite_Isofront_RGB_redx_1200x1200.jpg?v=1603999216",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_SandyWhite_Folded_RGB_red_ee0c7f84-bd4c-464d-8340-e3df4004d12e_1200x1200.jpg?v=1603999216"
-            ],
-            "quantity": 18
-          }
-        }
-      },
-
-      {
-        "brand": "KENNERTON",
-        "brandModel": "ROGNIR DYNAMIC CLOSED-BACK",
-        "price": 1645.00,
-        "color": {
-          "primary": {
-            "colorName": "Rognir Dynamic'Dusk'",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Dusk_1200x1200.jpg?v=1647985084",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Blue_1200x1200.jpg?v=1642540227"
-            ],
-            "quantity": 20
-          },
-          "secondary": {
-            "colorName": "Rognir Dynamic",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic_1200x1200.jpg?v=1647985084",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Gjallarhorn-JM-Edition_1200x1200.jpg?v=1645651176"
-            ],
-            "quantity": 38
-          }
-        }
-      },
-
-      {
-        "brand": "JBL",
-        "brandModel": "JBL LIVE 400BT",
-        "price": 99.00,
-        "color": {
-          "primary": {
-            "colorName": "Red",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_red_1_43c734cd-04c9-4f99-8694-f64885ae9994_1200x1200.jpg?v=1632158661",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_red_1_43c734cd-04c9-4f99-8694-f64885ae9994_1200x1200.jpg?v=1632158661"
-            ],
-            "quantity": 25
-          },
-          "secondary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_blk_1_2ca3a256-18d8-4ffd-9bb1-70c94f245176_1200x1200.jpg?v=1632158697",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_blk_4_b8408e77-527b-4875-a601-2b23218a8fd8_1200x1200.jpg?v=1632158697"
-            ],
-            "quantity": 28
-          }
-        }
-      },
-      {
-        "brand": "AUDIO-TECHNICA",
-        "brandModel": "ATH-S200BT WIRELESS",
-        "price": 89.96,
-        "color": {
-          "primary": {
-            "colorName": "Gray/Blue",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_1_sq_1200x1200.jpg?v=1570816949",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_4_sq_1200x1200.jpg?v=1570816949"
-            ],
-            "quantity": 15
-          },
-          "secondary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_bk_1_sq_1200x1200.jpg?v=1570816949",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_4_sq_1200x1200.jpg?v=1570816949"
-            ],
-            "quantity": 20
-          }
-        }
-      },
-
-    {
-        "brand": "KLIPSCH",
-        "brandModel": "REFERENCE ON-EAR WIRED",
-        "price": 199.99,
-        "color": {
-          "primary": {
-            "colorName": "White",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-White-1_1200x1200.jpg?v=1631127404",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-White-1_1200x1200.jpg?v=1631127404"
-            ],
-            "quantity": 30
-          },
-          "secondary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-Black-1_1200x1200.jpg?v=1631127417",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-Black-1_1200x1200.jpg?v=1631127417"
-            ],
-            "quantity": 20
-          }
-        }
-      },
-
-      {
-        "brand": "KENNERTON",
-        "brandModel": "VALI DYNAMIC OPEN BACK OVER-EAR",
-        "price": 899.95,
-        "color": {
-          "primary": {
-            "colorName": "Vali Curly Maple",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Kennerton-Vali-Curly-Maple_b586b2a6-8f75-4e01-8ae8-248ed3e5b331_1200x1200.jpg?v=1620421752",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/bLitz-4-Pin-Balanced-XLR-63-TRS-Adapter-1_1200x1200.jpg?v=1645654109"
-            ],
-            "quantity": 30
-          },
-          "secondary": {
-            "colorName": "Vali Purple Heart",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Vali-Purple-Heart_2982ba74-639d-4dc9-8d6f-74afd4a2fad7_1200x1200.jpg?v=1620421752",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Vali-Purple-Heart_2982ba74-639d-4dc9-8d6f-74afd4a2fad7_1200x1200.jpg?v=1620421752"
-            ],
-            "quantity": 30
-          }
-        }
-      },
-      {
-        "brand": "AUDEZE ",
-        "brandModel": "PENROSE WIRELESS PLANAR MAGNETIC",
-        "price": 299.00,
-        "color": {
-          "primary": {
-            "colorName": "Penrose X (Xbox)",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/PenroseX_ProductShots_XB_1200x1200.jpg?v=1616689100",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/PenroseX_ProductShots_XB_1200x1200.jpg?v=1616689100"
-            ],
-            "quantity": 20
-          },
-          "secondary": {
-            "colorName": "Penrose (PlayStation)",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Penrose_ProductShots_Web_Penrose_PS_1200x1200.jpg?v=1616689100",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Penrose_ProductShots_Web_Penrose_PS_1200x1200.jpg?v=1616689100"
-            ],
-            "quantity": 38
-          }
-        }
-      },
-      {
-        "brand": "AUDIO-TECHNICA",
-        "brandModel": "ATH-M50X PROFESSIONAL MONITOR",
-        "price": 199.00,
-        "color": {
-          "primary": {
-            "colorName": "Black",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_2_sq_copy_1200x1200.jpg?v=1605650192",
-                 "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_3_sq_copy_1200x1200.jpg?v=1605650192"
-            ],
-            "quantity": 20
-          },
-          "secondary": {
-            "colorName": "White",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50xwh_2_sq_copy_1200x1200.jpg?v=1622570042",
-                "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_2_sq_both_1200x1200.jpg?v=1622570042"
-            ],
-            "quantity": 10
-          }
-        }
+      "secondary": {
+        "colorName": "Silver",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/19Q3_new_D8000-Pro-Edition_web_materials_gallery-POPUP_01_1200x1200_1_1200x1200.png?v=1650556551",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/final_sfc_silver_35_15_1_1200x1200.jpg?v=1572627591"
+        ],
+        "quantity": 30
       }
-
-    
+    }
+  },
+  {
+    "brand": "FOCAL",
+    "brandModel": "WIRELESS BLUETOOTH OVER-EAR",
+    "price": 499.00,
+    "color": {
+      "primary": {
+        "colorName": "Purple",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-purple_1200x1200.jpg?v=1630442993",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-purple-fold_1200x1200.jpg?v=1630442993"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Olive",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive_1200x1200.jpg?v=1630442993",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive-fold_1200x1200.jpg?v=1630442993"
+        ],
+        "quantity": 38
+      }
+    }
+  },
+  {
+    "brand": "SENNHEISER",
+    "brandModel": "MOMENTUM 3 WIRELESS",
+    "price": 399.95,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Isofront_RGB_redx_182d191a-d8a2-45ea-b2a5-821b05c4c0d5_1200x1200.jpg?v=1603999216",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Folded_RGB_redx_1200x1200.jpg?v=1601993881"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "White",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_SandyWhite_Isofront_RGB_redx_1200x1200.jpg?v=1603999216",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_SandyWhite_Folded_RGB_red_ee0c7f84-bd4c-464d-8340-e3df4004d12e_1200x1200.jpg?v=1603999216"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "KENNERTON",
+    "brandModel": "ROGNIR DYNAMIC CLOSED-BACK",
+    "price": 1645.00,
+    "color": {
+      "primary": {
+        "colorName": "Rognir Dynamic'Dusk'",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Dusk_1200x1200.jpg?v=1647985084",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Blue_1200x1200.jpg?v=1642540227"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Rognir Dynamic",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic_1200x1200.jpg?v=1647985084",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Gjallarhorn-JM-Edition_1200x1200.jpg?v=1645651176"
+        ],
+        "quantity": 38
+      }
+    }
+  },
+  {
+    "brand": "JBL",
+    "brandModel": "JBL LIVE 400BT",
+    "price": 99.00,
+    "color": {
+      "primary": {
+        "colorName": "Red",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_red_1_43c734cd-04c9-4f99-8694-f64885ae9994_1200x1200.jpg?v=1632158661",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_red_1_43c734cd-04c9-4f99-8694-f64885ae9994_1200x1200.jpg?v=1632158661"
+        ],
+        "quantity": 25
+      },
+      "secondary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_blk_1_2ca3a256-18d8-4ffd-9bb1-70c94f245176_1200x1200.jpg?v=1632158697",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/jbl_live400bt_blk_4_b8408e77-527b-4875-a601-2b23218a8fd8_1200x1200.jpg?v=1632158697"
+        ],
+        "quantity": 28
+      }
+    }
+  },
+  {
+    "brand": "AUDIO-TECHNICA",
+    "brandModel": "ATH-S200BT WIRELESS",
+    "price": 89.96,
+    "color": {
+      "primary": {
+        "colorName": "Gray/Blue",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_1_sq_1200x1200.jpg?v=1570816949",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_4_sq_1200x1200.jpg?v=1570816949"
+        ],
+        "quantity": 15
+      },
+      "secondary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_bk_1_sq_1200x1200.jpg?v=1570816949",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_s200bt_gbl_4_sq_1200x1200.jpg?v=1570816949"
+        ],
+        "quantity": 20
+      }
+    }
+  },
+  {
+    "brand": "KLIPSCH",
+    "brandModel": "REFERENCE ON-EAR WIRED",
+    "price": 199.99,
+    "color": {
+      "primary": {
+        "colorName": "White",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-White-1_1200x1200.jpg?v=1631127404",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-White-1_1200x1200.jpg?v=1631127404"
+        ],
+        "quantity": 30
+      },
+      "secondary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-Black-1_1200x1200.jpg?v=1631127417",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Reference-On-Ear-II-Black-1_1200x1200.jpg?v=1631127417"
+        ],
+        "quantity": 20
+      }
+    }
+  },
+  {
+    "brand": "KENNERTON",
+    "brandModel": "VALI DYNAMIC OPEN BACK OVER-EAR",
+    "price": 899.95,
+    "color": {
+      "primary": {
+        "colorName": "Vali Curly Maple",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Kennerton-Vali-Curly-Maple_b586b2a6-8f75-4e01-8ae8-248ed3e5b331_1200x1200.jpg?v=1620421752",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/bLitz-4-Pin-Balanced-XLR-63-TRS-Adapter-1_1200x1200.jpg?v=1645654109"
+        ],
+        "quantity": 30
+      },
+      "secondary": {
+        "colorName": "Vali Purple Heart",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Vali-Purple-Heart_2982ba74-639d-4dc9-8d6f-74afd4a2fad7_1200x1200.jpg?v=1620421752",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Vali-Purple-Heart_2982ba74-639d-4dc9-8d6f-74afd4a2fad7_1200x1200.jpg?v=1620421752"
+        ],
+        "quantity": 30
+      }
+    }
+  },
+  {
+    "brand": "AUDEZE ",
+    "brandModel": "PENROSE WIRELESS PLANAR MAGNETIC",
+    "price": 299.00,
+    "color": {
+      "primary": {
+        "colorName": "Penrose X (Xbox)",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/PenroseX_ProductShots_XB_1200x1200.jpg?v=1616689100",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/PenroseX_ProductShots_XB_1200x1200.jpg?v=1616689100"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Penrose (PlayStation)",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Penrose_ProductShots_Web_Penrose_PS_1200x1200.jpg?v=1616689100",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Penrose_ProductShots_Web_Penrose_PS_1200x1200.jpg?v=1616689100"
+        ],
+        "quantity": 38
+      }
+    }
+  },
+  {
+    "brand": "AUDIO-TECHNICA",
+    "brandModel": "ATH-M50X PROFESSIONAL MONITOR",
+    "price": 199.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_2_sq_copy_1200x1200.jpg?v=1605650192",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_3_sq_copy_1200x1200.jpg?v=1605650192"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "White",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50xwh_2_sq_copy_1200x1200.jpg?v=1622570042",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_m50x_2_sq_both_1200x1200.jpg?v=1622570042"
+        ],
+        "quantity": 10
+      }
+    }
+  },
+  {
+    "brand": "HIFIMAN",
+    "brandModel": " DEVA PRO STEALTH ",
+    "price": 249.00,
+    "color": {
+      "primary": {
+        "colorName": "Silver",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/deva_pro-800_800-2_1_1200x1200.jpg?v=1633627346",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/deva_pro-800_800-5_1200x1200.jpg?v=1633627347"
+        ],
+        "quantity": 15
+      },
+      "secondary": {
+        "colorName": "Grey",
+        "images": [
+          "https://magnahifi.com/wp-content/uploads/2020/11/hifiman-deva-wired.jpg",
+          "https://rms-store.eu/img/product_media/38001-39000/min421A0466.jpg"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "AUDIO-TECHNICA",
+    "brandModel": "AUDIO-TECHNICA - ATH-M50XBT2 MO LANTERN GLOW LIMITED EDITION WIRELESS HEADPHONES",
+    "price": 1900.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://www.netonnet.se/GetFile/ProductImagePrimary/ljud/horlurar/tradlosahorlurar/audio-technica-ath-m50xbt2(1020528)_469316_1_Normal_Extra.webp",
+          "https://www.netonnet.se/GetFile/ProductImage/ljud/horlurar/tradlosahorlurar/audio-technica-ath-m50xbt2(1020528)_469320_5_Normal_Extra-3.webp"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Orange",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath-m50xbt2_mo_02_1200x1200.jpg?v=1634133759",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath-m50xbt2_mo_03_1_1200x1200.jpg?v=1634133759"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "HIFIMAN",
+    "brandModel": "HIFIMAN - ANANDA BT BLUETOOTH WIRELESS PLANAR MAGNETIC HEADPHONES",
+    "price": 7999.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/421a0059_1200x1200.jpg?v=1598539756",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/20190827041545_22708_1200x1200.jpg?v=1598539756"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Grey",
+        "images": [
+          "https://www.hembiobutiken.se/images/prod/342041-hifiman-edition-xs-578_2.jpg",
+          "https://www.hembiobutiken.se/images/prod/342042-hifiman-edition-xs-955_2.jpg"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "AUDIO-TECHNICA ",
+    "brandModel": "AUDIO-TECHNICA - ATH-SR30BT WIRELESS OVER-EAR HEADPHONES",
+    "price": 799.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_sr30bt_bk_1_sq_1200x1200.jpg?v=1609951756",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_sr30bt_bk_2_sq_4fccc931-5a98-459b-bd34-d7054c657489_1200x1200.jpg?v=1609951756"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "White",
+        "images": [
+          "https://cf-images.dustin.eu/cdn-cgi/image/format=auto,quality=75,width=828/image/d200001001198976/audio-technica-ath-sr30bt-gr%C3%A5.jpg",
+          "https://cf-images.dustin.eu/cdn-cgi/image/format=auto,quality=75,width=828/image/d200001001198979/audio-technica-ath-sr30bt-gr%C3%A5.jpg"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "SENNHEISER",
+    "brandModel": "SENNHEISER MOMENTUM 3 WIRELESS NOISE CANCELLING HEADPHONES",
+    "price": 249.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Isofront_RGB_redx_17f16b03-2fdb-4645-b77b-d8112f9b4cb0_1200x1200.jpg?v=1618929457",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/NEW_MOMENTUM3_AE_BT_XL_black_Folded_RGB_redx_b5a929f5-0a73-4e91-a772-f3a51fddddc6_1200x1200.jpg?v=1601993990"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Off White",
+        "images": [
+          "https://static.hifiklubben.com/498f4e/globalassets/product-images/se/senmomentum3wh_1.jpg?width=2500",
+          "https://static.hifiklubben.com/498f4e/globalassets/product-images/se/senmomentum3wh_2.jpg?width=2500"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "JBL",
+    "brandModel": "JBL LIVE 650BTNC OVER-EAR BLUETOOTH NOISE-CANCELLING HEADPHONES",
+    "price": 1199.00,
+    "color": {
+      "primary": {
+        "colorName": "White",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/JBL_LIVE650BTNC_Product-Image_Front_White_076_x1-1605x1605px_copy_1200x1200.jpg?v=1567915511",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/JBL_LIVE650BTNC_Product-Image_Hero_White_069_x1-1605x1605px_copy_1200x1200.jpg?v=1622581378"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Black",
+        "images": [
+          "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_81034846/fee_786_587_png/JBL-LIVE-660-NC-OVER-EAR---Svart",
+          "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_81034856/fee_786_587_png/JBL-LIVE-660-NC-OVER-EAR---Svart"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "SENNHEISER",
+    "brandModel": "SENNHEISER HD 350BT WIRELESS OVER-EAR HEADPHONES",
+    "price": 899.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/x1_desktop_HD_350BT_Black_Sennheiser_01_1200x1200.png?v=1598540876",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/7J1A6656x_1200x1200.jpg?v=1610731869"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "White",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/x1_desktop_HD_350BT_White_Sennheiser_01_1200x1200.png?v=1598540876",
+          "https://cf-images.dustin.eu/cdn-cgi/image/format=auto,quality=75,width=828/image/d200001003232666/sennheiser-hd-350bt-tr%C3%A5dl%C3%B6sa-h%C3%B6rlurar-vit.jpg"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "AUDIO-TECHNICA ",
+    "brandModel": "AUDIO-TECHNICA - ATH-DSR7BT BLUETOOTH OVER-EAR HEADPHONES",
+    "price": 2499.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/ath_dsr7bt_2_sq-e1483988063788_4d6b0f4f-b7cc-47e0-b43e-a46c03eec226_1200x1200.jpg?v=1619299908",
+          "https://www.hifi-punkten.se/assets/uploads/products/1968/700_166audiotechnicaathdsr7bt[1].jpg"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Grey",
+        "images": [
+          "https://www.hifi-punkten.se/produkt/ath-dsr7bt/?utm_source=google&utm_campaign=shopping&variant=8686&gclid=Cj0KCQjwpImTBhCmARIsAKr58cwctFHsjPMmraBv7I3zSHxTljVZYecD-VjRRZ4OFisXWn8ZzKnutqQaAhYKEALw_wcB"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "DALI IO-4",
+    "brandModel": "DALI",
+    "price": 249.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://static.hifiklubben.com/49946e/globalassets/product-images/da/daliio4ironbk_1.jpg?width=2500",
+          "https://static.hifiklubben.com/49946f/globalassets/product-images/da/daliio4ironbk_2.jpg?width=2500"
+        ],
+        "quantity": 15
+      },
+      "secondary": {
+        "colorName": "Olive",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive_1200x1200.jpg?v=1630442993",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/focal-listen-olive-fold_1200x1200.jpg?v=1630442993"
+        ],
+        "quantity": 38
+      }
+    }
+  },
+  {
+    "brand": "SHURE",
+    "brandModel": "AONIC 50 WIRELESS NOISE CANCELLING",
+    "price": 239.00,
+    "color": {
+      "primary": {
+        "colorName": "Brown",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50br1_1200x1200.jpg?v=1605909827",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50br2_1200x1200.jpg?v=1605909827"
+        ],
+        "quantity": 10
+      },
+      "secondary": {
+        "colorName": "White/Tan",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50wh1_1200x1200.jpg?v=1605909827",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/50wh2_1200x1200.jpg?v=1605909827"
+        ],
+        "quantity": 30
+      }
+    }
+  },
+  {
+    "brand": "BOWERS & WILKINS ",
+    "brandModel": "PX5 ON-EAR NOISE CANCELING WIRELESS HEADPHONES",
+    "price": 3400.00,
+    "color": {
+      "primary": {
+        "colorName": "Black",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Low--PX5_Front_Angle_-_Space_Grey_1200x1200.jpg?v=1598541662",
+          "https://static.hifiklubben.com/499469/globalassets/product-images/bw/bwpx5gr_1.jpg?width=2500"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Dark Blue",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Low--PX5_Front_Angle_-_Blue_1200x1200.jpg?v=1598541662",
+          "https://static.hifiklubben.com/499469/globalassets/product-images/bw/bwpx5gr_1.jpg?width=2500"
+        ],
+        "quantity": 18
+      }
+    }
+  },
+  {
+    "brand": "KENNERTON",
+    "brandModel": "ROGNIR DYNAMIC CLOSED-BACK",
+    "price": 1645.00,
+    "color": {
+      "primary": {
+        "colorName": "Rognir Dynamic'Dusk'",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Dusk_1200x1200.jpg?v=1647985084",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic-Blue_1200x1200.jpg?v=1642540227"
+        ],
+        "quantity": 20
+      },
+      "secondary": {
+        "colorName": "Rognir Dynamic",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Rognir-Dynamic_1200x1200.jpg?v=1647985084",
+          "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Gjallarhorn-JM-Edition_1200x1200.jpg?v=1645651176"
+        ],
+        "quantity": 38
+      }
+    }
+  }
 ]
