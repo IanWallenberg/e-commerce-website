@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&display=swap');
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+
+    width: 28.5%;
+    margin: 20px 0;
+
+    box-shadow: 2px 2px 10px 5px grey;
+
+    cursor: pointer;
+}
+
+.card>img {
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.colors {
+    width: 50%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.color {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.color.red {
+    background-color: red;
+}
+
+.color.black {
+    background-color: black;
+}
+
+.color.blue {
+    background-color: blue;
+}
+
+h3 {
+    text-align: center;
+    display: inline-block;
+}
+
+.product-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divider {
+    background-color: #FEC5BB;
+    height: 4px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h3.thin {
+    font-weight: 200;
+}
+
+.price {
+    font-size: 1.6rem;
+}
+
+.product-info .title {
+    font-size: 1.5rem;
+}

@@ -7,12 +7,13 @@ import { LandingPage } from "../components/LandingPage/LandingPage";
 import { CategoriesPage } from "../components/Categories/CategoriesPage";
 import { LoginScreen } from "../components/Registration/LoginScreen";
 import { RegisterScreen } from "../components/Registration/RegisterScreen";
-import { ProductsPage } from "../components/ProductsPage/ProductsPage";
 import { SingleDescription } from "../components/SingleProducts/SingleDescription";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/ui/Footer";
 
 import { AccountPage } from "../components/ProfilePage/AccountPage";
+import ProductsPage from "../components/ProductsPage/ProductsPage";
+import InEarPage from "../components/ProductsPage/InEarPage";
 
 export const EcommerceRouter = () => {
   return (
@@ -29,6 +30,7 @@ export const EcommerceRouter = () => {
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/in-ear" element={<InEarPage />} />
         <Route path="/singledescription" element={<SingleDescription />} />
       </Routes>
     </Router>
