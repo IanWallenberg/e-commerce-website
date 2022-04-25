@@ -1,9 +1,11 @@
 require("dotenv").config();
 const express = require("express"); // Initiating express
 const connectDB = require("./config/db"); // fetching from config for connecting database
+const inEarHeadphones = require("./models/InEarHeadphones.js");
 const Headphones = require("./models/Headphones.js");
 const cors = require("cors");
 const app = express();
+
 
 connectDB();
 
@@ -36,7 +38,38 @@ app.get("/products", (req, res) => {
     }
   });
 });
+
+
+//creating products Onear get all products
+
+
+app.get("/products/InEar"), async (req, res) => {
+  try {
+    const products = await inEarHeadphones.find();
+    res.json({ ok: true, message: "products", data: products });
+  } catch (error) {
+    res.status(500).json({
+      ok: false,
+      message: error.message,
+      data: "",
+    });
+  }
+}
+
+
+"localhost:5000/products/InEar"
+
+
+
+
+
+
+
+
+
 //Creating the PORT
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
