@@ -1,11 +1,11 @@
 require("dotenv").config();
 const express = require("express"); // Initiating express
 const connectDB = require("./config/db"); // fetching from config for connecting database
-// const inEarHeadphones = require("./models/InEarHeadphones.js");
-const Headphones = require("./models/Headphones.js");
+const OnEarHeadphones = require("./models/OnEarModel.js");
+const InEarHeadphones = require("./models/InEarModel.js");
 const cors = require("cors");
 const app = express();
-require('./seederDatabase')
+
 
 
 
@@ -18,12 +18,14 @@ app.use(cors());
 
 
 //DB config
+
 app.get("/", (req, res) => res.status(200).send("HELOOOO"));
 
-app.post("/products", (req, res) => {
-  const dbHeadphones = req.body;
 
-  Headphones.create(dbHeadphones, (err, data) => {
+// OnEar Controller
+app.post("/products/onear", (req, res) => {
+  const dbOnEar = req.body;
+  OnEarHeadphones.create(dbOnEar, (err, data) => {
     if (err) {
       res.status(500).send(err);
     } else {
@@ -32,8 +34,8 @@ app.post("/products", (req, res) => {
   });
 });
 
-app.get("/products/inEar", (req, res) => {
-  Headphones.find((err, data) => {
+app.get("/products/onear", (req, res) => {
+  OnEarHeadphones.find((err, data) => {
     if (err) {
       res.status(500).send(err);
     } else {
@@ -43,39 +45,29 @@ app.get("/products/inEar", (req, res) => {
 });
 
 
-//creating products Onear get all products
+// InEar Controller
+app.post("/products/inear", (req, res) => {
+  const dbInEar = req.body;
+  InEarHeadphones.create(dbInEar, (err, data) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res.status(201).send(data);
+    }
+  });
+});
+
+app.get("/products/inear", (req, res) => {
+ InEarHeadphones.find((err, data) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res.status(200).send(data);
+    }
+  });
+});
 
 
-// app.get("/products"), async (req, res) => {
-//   try {
-//     const inEarproducts = await inEarHeadphones.find();
-//     res.json({ ok: true, message: "products", data: inEarproducts });
-//   } catch (error) {
-//     res.status(500).json({
-//       ok: false,
-//       message: error.message,
-//       data: "",
-//     });
-//   }
-// }
-  
-
-// app.get("/products/OnEar"), async (req, res) => {
-//   try {
-//     const products = await Headphones.find();
-//     console.log(products)
-//     res.json({ ok: true, message: "products", data: products });
-//   } catch (error) {
-//     res.status(500).json({
-//       ok: false,
-//       message: error.message,
-//       data: "",
-//     });
-//   }
-// }
-
-
-// "localhost:5000/products/InEar"
 
 
 

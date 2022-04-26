@@ -18,5 +18,8 @@ const HeadphonesSchema = mongoose.Schema({
   },
 });
 
-const Headphones = mongoose.model("inearheadphones", HeadphonesSchema);
-module.exports = Headphones;
+
+const OnEarHeadphones = mongoose.model("onearheadphones", HeadphonesSchema);
+module.exports =OnEarHeadphones;
+
+
