@@ -28,6 +28,16 @@ padding-left: 50px;
 
 `
 
+const getInEarProducts = async () => {
+  const url = "http://localhost:5000/products/inear";
+  const response = await fetch(url);
+  const data = response.json();
+  console.log(data)
+}
+getInEarProducts();
+
+
+
 const InEarPage = () => {
   return (
     <div>
