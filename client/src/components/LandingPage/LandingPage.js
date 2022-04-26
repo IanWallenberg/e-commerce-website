@@ -21,6 +21,14 @@ background-color: #F8EDEB;
 `
 
 export const LandingPage = () => {
+
+  const getInEarProducts = async () => {
+    const url = "http://localhost:5000/products/inear";
+    const response = await fetch(url);
+    const data = response.json();
+    console.log(data)
+}
+  getInEarProducts();
   return (
     <Container>
     <NavBarLanding/>
