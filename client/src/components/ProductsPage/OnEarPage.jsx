@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { GetOnEarHeadphones } from "../Helpers/getOnEarHeadphones";
 import Card from "./Card";
 
 const Header = styled.div`
@@ -26,11 +27,11 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
-export const InEarPage = () => {
+export const OnEarPage = ({ id, brand, brandModel, price }) => {
   return (
     <div>
       <Header />
-      <BigTitle>IN EAR HEADPHONES</BigTitle>
+      <BigTitle> {brand}</BigTitle>
       <Button>FILTER</Button>
       <CardsContainer>
         <Card />
