@@ -18,5 +18,9 @@ const inEarHeadphonesSchema = mongoose.Schema({
   },
 });
 
+<<<<<<< HEAD
 const inEarHeadphones = mongoose.model("InEarHeadphones", inEarHeadphonesSchema);
+=======
+const inEarHeadphones = mongoose.model("inearheadphones", inEarHeadphonesSchema);
+>>>>>>> c42ca6c8d2cc7dc491cc9074c48585090b0a725b
 module.exports = inEarHeadphones;
