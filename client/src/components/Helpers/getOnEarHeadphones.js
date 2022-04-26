@@ -11,10 +11,11 @@ export const GetOnEarHeadphones = async () => {
       color: product.color.primary.colorName,
       images: product.color.primary.images,
       quantity: product.color.primary.quantity,
-      color: product.color.secondary.colorName,
-      images: product.color.secondary.images,
-      quantity: product.color.secondary.quantity,
+      color2: product.color.secondary.colorName,
+      images2: product.color.secondary.images,
+      quantity2: product.color.secondary.quantity,
     };
   });
+  console.log(products);
   return products;
 };

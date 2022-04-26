@@ -27,6 +27,14 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
+const getOnEarProducts = async () => {
+  const url = "http://localhost:5000/products/onear";
+  const response = await fetch(url);
+  const data = response.json();
+  console.log(data);
+};
+getOnEarProducts();
+
 export const OnEarPage = ({ id, brand, brandModel, price }) => {
   return (
     <div>
