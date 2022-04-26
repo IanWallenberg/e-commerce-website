@@ -12,8 +12,9 @@ import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/ui/Footer";
 
 import { AccountPage } from "../components/ProfilePage/AccountPage";
-import ProductsPage from "../components/ProductsPage/ProductsPage";
-import InEarPage from "../components/ProductsPage/InEarPage";
+
+import { OnEarPage } from "../components/ProductsPage/OnEarPage";
+import { InEarPage } from "../components/ProductsPage/InEarPage";
 
 export const EcommerceRouter = () => {
   return (
@@ -29,7 +30,7 @@ export const EcommerceRouter = () => {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
-        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/onear" element={<OnEarPage />} />
         <Route path="/in-ear" element={<InEarPage />} />
         <Route path="/singledescription" element={<SingleDescription />} />
       </Routes>
