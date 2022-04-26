@@ -10,7 +10,6 @@ const HeadphonesSchema = mongoose.Schema({
       images: [],
       quantity: Number,
     },
-
     secondary: {
       colorName: String,
       images: [],
@@ -19,5 +18,5 @@ const HeadphonesSchema = mongoose.Schema({
   },
 });
 
-const Headphones = mongoose.model("Headphones", HeadphonesSchema);
+const Headphones = mongoose.model("inearheadphones", HeadphonesSchema);
 module.exports = Headphones;
