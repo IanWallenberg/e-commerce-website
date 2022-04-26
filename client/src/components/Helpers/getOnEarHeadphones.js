@@ -1,8 +1,8 @@
 export const GetOnEarHeadphones = async () => {
   const url = `http://localhost:5000/products/onear`;
   const resp = await fetch(url);
-  const { data } = await resp.json();
-  const products = data.map((product) => {
+  const data = await resp.json();
+  const products = await data.map((product) => {
     return {
       id: product._id,
       brand: product.brand,
@@ -16,6 +16,9 @@ export const GetOnEarHeadphones = async () => {
       quantity2: product.color.secondary.quantity,
     };
   });
-  console.log(products);
+  console.log("GetOnEarHeadphones in func", products);
   return products;
 };
+
+GetOnEarHeadphones();
+// console.log("GetOnEarHeadphones", GetOnEarHeadphones());

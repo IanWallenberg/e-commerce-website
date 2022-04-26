@@ -3,31 +3,27 @@
 //     const resp = await fetch(url);
 //     const { data } = await resp.json();
 
-export const getInEarProducts = async () => {
-    const url = "http://localhost:5000/products/inear";
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data)
+export const GetInEarHeadphones = async () => {
+  const url = "http://localhost:5000/products/inear";
+  const response = await fetch(url);
+  const data = await response.json();
+  const getInEarProducts = await data.map((product) => {
+    return {
+      id: product._id,
+      brand: product.brand,
+      brandModel: product.brandModel,
+      color: product.color.primary.colorName,
+      image1: product.image1,
+      image2: product.image2,
+      price: product.price,
+      quantity: product.quantity,
+    };
+  });
+  console.log("GetInEarHeadphones in func", getInEarProducts);
+  return getInEarProducts;
+};
 
-//   getInEarProducts();
-  
-    const getInEarProducts = data.map((product) => {
-  
-      return {
-        id: product._id,
-        brand: product.brand,
-        brandModel: product.brandModel,
-        color: product.color.primary.colorName,
-        image1: product.image1,
-        image2: product.image2,
-        price: product.price,
-        quantity: product.quantity,
-      };
-    });
-   
-    
-
-    
+GetInEarHeadphones();
 
 //     "color": {
 //       "primary": {
@@ -48,12 +44,3 @@ export const getInEarProducts = async () => {
 //       }
 //     }
 //   },
-
-console.log(data.brand)
-
-    
-    return getInEarProducts;
-  };
-  
-  
- 

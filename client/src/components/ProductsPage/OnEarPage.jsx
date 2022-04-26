@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GetOnEarHeadphones } from "../Helpers/getOnEarHeadphones";
+import { getInEarHeadphones } from "../Helpers/GetInEarProducts";
 import Card from "./Card";
 
 const Header = styled.div`
@@ -31,7 +32,7 @@ const getOnEarProducts = async () => {
   const url = "http://localhost:5000/products/onear";
   const response = await fetch(url);
   const data = response.json();
-  console.log(data);
+  console.log("hgfd", data);
 };
 getOnEarProducts();
 
