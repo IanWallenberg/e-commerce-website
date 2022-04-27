@@ -1,4 +1,6 @@
+
 import { getInEarHeadphones } from "../components/Helpers/getInEarProducts";
+
 import { useEffect, useState } from "react";
 
 export const useFetchInEarProducts = () => {
@@ -6,6 +8,7 @@ export const useFetchInEarProducts = () => {
 
   useEffect(() => {
     getInEarHeadphones()
+   
       .then((response) => {
         // console.log("response", response)
         return response;

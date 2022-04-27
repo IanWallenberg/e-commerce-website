@@ -1,4 +1,3 @@
-import React from "react";
 import './Card.css';
 
 const Card = (product) => {
@@ -21,4 +20,4 @@ const Card = (product) => {
   )
 }
 
-export default Card
+export default Card;
