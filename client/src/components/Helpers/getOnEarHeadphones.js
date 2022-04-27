@@ -8,17 +8,16 @@ export const GetOnEarHeadphones = async () => {
       brand: product.brand,
       brandModel: product.brandModel,
       price: product.price,
-      color: product.color.primary.colorName,
-      images: product.color.primary.images,
-      quantity: product.color.primary.quantity,
+      color1: product.color.primary.colorName,
+      image1: product.color.primary.images,
+      quantity1: product.color.primary.quantity,
       color2: product.color.secondary.colorName,
-      images2: product.color.secondary.images,
+      image2: product.color.secondary.images,
       quantity2: product.color.secondary.quantity,
     };
   });
-  console.log("GetOnEarHeadphones in func", products);
+  
   return products;
 };
 
-GetOnEarHeadphones();
-// console.log("GetOnEarHeadphones", GetOnEarHeadphones());
+

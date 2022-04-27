@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { GetOnEarHeadphones } from "../Helpers/getOnEarHeadphones";
-import { getInEarHeadphones } from "../Helpers/GetInEarProducts";
 import Card from "./Card";
 
 const Header = styled.div`
@@ -28,27 +26,15 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
-const getOnEarProducts = async () => {
-  const url = "http://localhost:5000/products/onear";
-  const response = await fetch(url);
-  const data = response.json();
-  console.log("hgfd", data);
-};
-getOnEarProducts();
-
-export const OnEarPage = ({ id, brand, brandModel, price }) => {
+export const OnEarPage = () => {
   return (
     <div>
       <Header />
-      <BigTitle> {brand}</BigTitle>
+      <BigTitle></BigTitle>
       <Button>FILTER</Button>
       <CardsContainer>
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+       
       </CardsContainer>
     </div>
   );
