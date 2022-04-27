@@ -1,4 +1,4 @@
-import { getOnEarHeadphones } from "../components/helpers/getOnEarHeadphones";
+import { getOnEarHeadphones } from "../components/Helpers/getOnEarHeadphones";
 import { useState, useEffect } from "react";
 
 

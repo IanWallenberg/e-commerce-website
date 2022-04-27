@@ -35,11 +35,11 @@ export const InEarPage = () => {
       <Header />
       <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTER</Button>
-      {inEarProducts.map(prod=>{
+      {inEarProducts.map(prod=>(
         <CardsContainer key={prod.id}>
         <Card {...prod}/>
       </CardsContainer>
-      })}
+      ))}
       </div>
   );
 };
