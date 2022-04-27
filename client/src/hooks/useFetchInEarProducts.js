@@ -1,5 +1,4 @@
-
-import { getInEarHeadphones } from "../components/helpers/getInEarProducts";
+import { getInEarHeadphones } from "../components/Helpers/GetInEarProducts";
 
 import { useEffect, useState } from "react";
 
@@ -10,7 +9,6 @@ export const useFetchInEarProducts = () => {
     getInEarHeadphones()
       .then((response) => {
         return response;
-
       })
       .then((products) => {
         setProducts(products);

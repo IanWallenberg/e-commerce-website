@@ -1,6 +1,5 @@
-import { getOnEarHeadphones } from "../components/helpers/getOnEarHeadphones";
+import { getOnEarHeadphones } from "../components/Helpers/getOnEarHeadphones";
 import { useState, useEffect } from "react";
-
 
 export const useFetchOnEarProducts = () => {
   const [products, setProducts] = useState([]);
@@ -15,5 +14,3 @@ export const useFetchOnEarProducts = () => {
   }, []);
   return products;
 };
-
-
