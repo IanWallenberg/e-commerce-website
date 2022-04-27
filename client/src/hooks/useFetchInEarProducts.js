@@ -1,19 +1,19 @@
-import { getInEarProducts } from "../components/Helpers/GetInEarProducts";
-
+import { getInEarHeadphones } from "../components/Helpers/getInEarProducts";
 import { useEffect, useState } from "react";
 
-export const useFetchProducts = () => {
+export const useFetchInEarProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    getInEarProducts()
+    getInEarHeadphones()
       .then((response) => {
+        // console.log("response", response)
         return response;
+
       })
       .then((products) => {
         setProducts(products);
       });
   }, []);
-
   return products;
 };
