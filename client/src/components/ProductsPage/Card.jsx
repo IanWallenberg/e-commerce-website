@@ -8,7 +8,7 @@ const Card = (product) => {
                 <div className="color blue"></div>
                 <div className="color black"></div>
             </div>
-            <img src={product.image1} alt="Product" className="product-img" />
+            <img src={product.image2} alt="Product" className="product-img" />
             <div className="product-info">
             <h3 className="title">{product.brand}</h3>
             <div className="divider"></div>
