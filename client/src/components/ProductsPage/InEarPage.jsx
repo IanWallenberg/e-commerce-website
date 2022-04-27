@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
+import { useFetchInEarProducts } from "../../hooks/useFetchInEarProducts";
 
 const Header = styled.div`
   background-image: url("./assets/products-header.png");
@@ -26,29 +27,19 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
-const getInEarProducts = async () => {
-  const url = "http://localhost:5000/products/inear";
-  const response = await fetch(url);
-  const data = response.json();
-  console.log(data)
-}
-getInEarProducts();
-
 
 export const InEarPage = () => {
+  const inEarProducts = useFetchInEarProducts();
   return (
     <div>
       <Header />
       <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTER</Button>
-      <CardsContainer>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      {inEarProducts.map(prod=>{
+        <CardsContainer key={prod.id}>
+        <Card {...prod}/>
       </CardsContainer>
-    </div>
+      })}
+      </div>
   );
 };
