@@ -7,8 +7,10 @@ const Header = styled.div`
   background-image: url("./assets/products-header.png");
   height: 30%;
 `;
+
 const CardsContainer = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 `;
@@ -26,7 +28,6 @@ const Button = styled.button`
   cursor: pointer;
   padding-left: 50px;
 `;
-
 
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
