@@ -1,12 +1,11 @@
-import { getInEarProducts } from "../components/Helpers/GetInEarProducts";
-
+import { getOnEarProducts } from "../components/Helpers/getOnEarProducts";
 import { useEffect, useState } from "react";
 
 export const useFetchProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    getInEarProducts()
+    getOnEarProducts()
       .then((response) => {
         return response;
       })

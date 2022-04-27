@@ -1,4 +1,4 @@
-export const GetOnEarHeadphones = async () => {
+export const getOnEarHeadphones = async () => {
   const url = `http://localhost:5000/products/onear`;
   const resp = await fetch(url);
   const data = await resp.json();
@@ -16,7 +16,6 @@ export const GetOnEarHeadphones = async () => {
       quantity2: product.color.secondary.quantity,
     };
   });
-  
   return products;
 };
 
