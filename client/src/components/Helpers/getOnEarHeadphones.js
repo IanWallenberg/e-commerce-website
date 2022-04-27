@@ -2,7 +2,7 @@ export const getOnEarHeadphones = async () => {
   const url = `http://localhost:5000/products/onear`;
   const resp = await fetch(url);
   const data = await resp.json();
-  
+
   const products = await data.map((product) => {
     return {
       id: product._id,
@@ -20,4 +20,4 @@ export const getOnEarHeadphones = async () => {
   return products;
 };
 
-
+//Delete me
