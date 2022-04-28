@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useFetchOnEarProducts } from "../../hooks/useFetchOnEarProduct";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Header = styled.div`
   background-image: url("./assets/products-header.png");
@@ -36,7 +37,9 @@ export const OnEarPage = () => {
       <Button>FILTER</Button>
       {onEarProducts.map((product) => (
         <CardsContainer key={product.id}>
-          <Card {...product} />
+          <Link to={`singledescription/${product.id}`} key={product.id}>
+            <Card {...product} />
+          </Link>
         </CardsContainer>
       ))}
     </div>

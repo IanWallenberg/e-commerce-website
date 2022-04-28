@@ -32,7 +32,7 @@ export const EcommerceRouter = () => {
         <Route path="/accountpage" element={<AccountPage />} />
         <Route path="/onear" element={<OnEarPage />} />
         <Route path="/in-ear" element={<InEarPage />} />
-        <Route path="/singledescription" element={<SingleDescription />} />
+        <Route path="/singledescription/:id" element={<SingleDescription />} />
       </Routes>
     </Router>
   );
