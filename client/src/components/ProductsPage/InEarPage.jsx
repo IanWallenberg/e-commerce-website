@@ -43,7 +43,9 @@ export const InEarPage = () => {
       <Button>FILTER</Button>
       {inEarProducts.map(prod=>(
         <CardsContainer key={prod.id}>
-        <Link to= {`/product/${prod.id}`} style={linkStyle}><Card {...prod}/></Link>
+        <Link to= {`/product/${prod.id}`} style={linkStyle} state={prod}>
+          <Card {...prod}/>
+        </Link>
       </CardsContainer>
       ))}
       </div>

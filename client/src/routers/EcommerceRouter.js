@@ -26,7 +26,7 @@ export const EcommerceRouter = () => {
         <Route path="/categories" element={<Footer />} />
         <Route path="/product/onear" element={<OnEarPage />} />
         <Route path="/product/inear" element={<InEarPage />} />
-        <Route path="/product/:id"  element={<SingleDescription />} />
+        <Route path="/product/:pid"   element={<SingleDescription />} />
         <Route path="/checkout-Cart" element={<CheckoutCart />} />
         <Route path="/checkout-Delivery" element={<CheckoutDelivery />} />
         <Route path="/checkout-Payment" element={<CheckoutPayment />} />
