@@ -6,6 +6,7 @@ import InEar from './Img/inear.jpg';
 import OnEarOverLay from './Img/HP3a.png';
 import InEarOverlay from './Img/EP3.png';
 import Newsletter from '../Newsletter/Newsletter';
+import { Link } from 'react-router-dom';
 
 // Components for the page 
 
@@ -185,7 +186,7 @@ export const CategoriesPage = () => {
   return (
     <Container>
       <Nav/>
-      <CategoriesOnEar>
+      <CategoriesOnEar> 
        <Div1> </Div1>
        <Div2>
          <DivText>
@@ -193,9 +194,11 @@ export const CategoriesPage = () => {
           <DivP> WH-1000XM4
 JUST MUSIC. NOTHING ELSE.
 It just you and the music when using the WH-1000XM4 headphones. Try the easy way to less noise and cleaner sound, where smart technology automatically makes the experience more personal. </DivP>
-         <Button> SEE ALL </Button>
+<Link to = "/product/onear">
+   <Button> SEE ALL </Button>
+</Link>
          </DivText> 
-       </Div2>
+       </Div2>       
       </CategoriesOnEar>
       <CategoriesInEar>
         <Div3>
@@ -204,7 +207,9 @@ It just you and the music when using the WH-1000XM4 headphones. Try the easy way
           <DivP> WH-1000XM4
 JUST MUSIC. NOTHING ELSE.
 It just you and the music when using the WH-1000XM4 headphones. Try the easy way to less noise and cleaner sound, where smart technology automatically makes the experience more personal. </DivP>
-         <Button> SEE ALL </Button>
+<Link to = "/product/inear">  
+   <Button> SEE ALL </Button>
+</Link>
          </DivText> 
         </Div3>
         <Div4></Div4>

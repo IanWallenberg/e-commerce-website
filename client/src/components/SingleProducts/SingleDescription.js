@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
 import dataSlider from "../../OnEarHeadphones.json";
+import { useLocation} from "react-router-dom";
+import { InEarPage } from "../ProductsPage/InEarPage";
 
 const MainContainer = styled.div`
   display: flex;
@@ -67,6 +69,7 @@ export const SingleDescription = () => {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
+  
   return (
     <>
       <Nav />
