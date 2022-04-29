@@ -20,19 +20,25 @@ export const EcommerceRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<LandingPage />} />
-        <Route path="/checkout-Cart" element={<CheckoutCart />} />
-        <Route path="/checkout-Delivery" element={<CheckoutDelivery />} />
-        <Route path="/checkout-Payment" element={<CheckoutPayment />} />
+        <Route exact path="/" element={<LandingPage />} />
         <Route path="/categories" element={<CategoriesPage />} />
         <Route path="/categories" element={<Newsletter />} />
         <Route path="/categories" element={<Footer />} />
+        <Route path="/product/onear" element={<OnEarPage />} />
+        <Route path="/product/inear" element={<InEarPage />} />
+        <Route path="/product/:pid"   element={<SingleDescription />} />
+        <Route path="/checkout-Cart" element={<CheckoutCart />} />
+        <Route path="/checkout-Delivery" element={<CheckoutDelivery />} />
+        <Route path="/checkout-Payment" element={<CheckoutPayment />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
-        <Route path="/onear" element={<OnEarPage />} />
-        <Route path="/in-ear" element={<InEarPage />} />
-        <Route path="/singledescription/:id" element={<SingleDescription />} />
+// <<<<<<< sudha
+// =======
+//         <Route path="/onear" element={<OnEarPage />} />
+//         <Route path="/in-ear" element={<InEarPage />} />
+//         <Route path="/singledescription/:id" element={<SingleDescription />} />
+// >>>>>>> main
       </Routes>
     </Router>
   );

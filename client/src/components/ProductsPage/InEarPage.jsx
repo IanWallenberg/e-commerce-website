@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 import { useFetchInEarProducts } from "../../hooks/useFetchInEarProducts";
+import { Link } from 'react-router-dom';
 
 const Header = styled.div`
   background-image: url("./assets/products-header.png");
@@ -14,6 +15,10 @@ const CardsContainer = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
 `;
+const linkStyle = {
+  textDecoration: "none",
+  color: "black"
+};
 
 const BigTitle = styled.h1`
   text-align: center;
@@ -38,7 +43,9 @@ export const InEarPage = () => {
       <Button>FILTER</Button>
       {inEarProducts.map(prod=>(
         <CardsContainer key={prod.id}>
-        <Card {...prod}/>
+        <Link to= {`/product/${prod.id}`} style={linkStyle} state={prod}>
+          <Card {...prod}/>
+        </Link>
       </CardsContainer>
       ))}
       </div>
