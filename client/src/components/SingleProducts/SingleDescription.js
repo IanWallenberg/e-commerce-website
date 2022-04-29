@@ -51,7 +51,7 @@ export const SingleDescription = () => {
 
   const location = useLocation();
   const data = location.state;
-  // console.log("data = ", data);
+  console.log("data = ", data);
 
 
   const nextSlide = () => {
