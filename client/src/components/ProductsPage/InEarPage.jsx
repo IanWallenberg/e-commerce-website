@@ -14,6 +14,7 @@ const CardsContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 `;
 const linkStyle = {
   textDecoration: "none",
