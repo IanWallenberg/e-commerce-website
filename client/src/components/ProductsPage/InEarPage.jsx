@@ -42,8 +42,6 @@ flex-wrap: wrap;
 justify-content: space-around;
 `
 
-
-
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
   return (
@@ -51,7 +49,7 @@ export const InEarPage = () => {
     <Header />
 
     <BigTitle>IN EAR HEADPHONES</BigTitle>
-      <Button>FILTER</Button>
+      <Button>FILTERS</Button>
       <Div>
       
       {inEarProducts.map(prod=>(
