@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
 import dataSlider from "../../OnEarHeadphones.json";
+import { useLocation  } from "react-router-dom";
 
 const MainContainer = styled.div`
   display: flex;
@@ -48,6 +49,11 @@ export const SingleDescription = () => {
   const [itemIndex, setItemIndex] = useState(1);
   const [numberOfImages, setNumberOfImages] = useState(2);
 
+  const location = useLocation();
+  const data = location.state;
+  console.log("data = ", data);
+
+
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
       setSlideIndex(slideIndex + 1);
@@ -67,6 +73,7 @@ export const SingleDescription = () => {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
+  
   return (
     <>
       <Nav />
@@ -84,19 +91,14 @@ export const SingleDescription = () => {
 
         <DescriptionWrapper className="descriptionWrapper">
           <h4>{dataSlider[itemIndex].name}</h4>
-          <h6> FREQUENCY RESh6ONSE </h6>
-          <p>
-            (BLUETOOTH® COMMUNICATION) 20 Hz–20,000 Hz (44.1 kHz Sampling)/20
-            Hz–40,000 Hz (LDAC 96 kHz Sampling, 990 kbps)
-          </p>
 
-          <h6>FREQUENCY RESPONSE</h6>
-          <p> 4 Hz-40,000 Hz VOLUME CONTROL Touch Sensor</p>
+          <h6> BRAND: {data.brand} </h6>
+          <p>  BRAND MODEL : {data.brandModel} </p>
 
-          <h6>HEADPHONE TYPE</h6>
-          <p> Closed, dynamic</p>
+          <h6> COLOR : {data.color1} / {data.color2} </h6>
 
-          <h3>2800.00 SEK (VAT)</h3>
+          <h6> PRICE : {data.price}</h6>
+    
           <Button className="addToCartBtn">ADD TO CART</Button>
         </DescriptionWrapper>
       </MainContainer>
