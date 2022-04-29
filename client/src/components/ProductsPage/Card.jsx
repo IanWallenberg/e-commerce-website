@@ -3,14 +3,14 @@ import "./Card.css";
 const Card = ({ image1, brandModel, brand, price }) => {
   return (
 
-        <div className="card">
-            <div className="colors">
-                <div className="color red"></div>
-                <div className="color blue"></div>
-                <div className="color black"></div>
-            </div>
-            
-            {image1 === "N/A" ? (
+    <div className="card">
+      <div className="colors">
+        <div className="color red"></div>
+        <div className="color blue"></div>
+        <div className="color black"></div>
+      </div>
+      {image1 === "N/A" ? (
+
         <img src="headphonesLogo.png" alt="headphones-logo" />
       ) : (
         <img src={image1} alt="Product" className="product-img" />
