@@ -37,7 +37,7 @@ export const OnEarPage = () => {
       <Button>FILTER</Button>
       {onEarProducts.map((product) => (
         <CardsContainer key={product.id}>
-          <Link to={`singledescription/${product.id}`} key={product.id}>
+          <Link to={`/product/${product.id}`} key={product.id} state={product}>
             <Card {...product} />
           </Link>
         </CardsContainer>
