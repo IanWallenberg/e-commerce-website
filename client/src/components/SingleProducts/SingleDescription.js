@@ -3,8 +3,8 @@ import styled from "styled-components";
 // import OnEar from "../Categories/Img/HP2.jpg";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
-import dataSlider from "../../OnEarHeadphones.json";
-import { useLocation  } from "react-router-dom";
+// import dataSlider from "../../OnEarHeadphones.json";
+import { useLocation } from "react-router-dom";
 
 const MainContainer = styled.div`
   display: flex;
@@ -53,7 +53,6 @@ export const SingleDescription = () => {
   const data = location.state;
   console.log("data = ", data);
 
-
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
       setSlideIndex(slideIndex + 1);
@@ -73,7 +72,7 @@ export const SingleDescription = () => {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
-  
+
   return (
     <>
       <Nav />
@@ -90,15 +89,16 @@ export const SingleDescription = () => {
         ></Slider>
 
         <DescriptionWrapper className="descriptionWrapper">
-          <h4>{dataSlider[itemIndex].name}</h4>
-
           <h6> BRAND: {data.brand} </h6>
-          <p>  BRAND MODEL : {data.brandModel} </p>
+          <p> BRAND MODEL : {data.brandModel} </p>
 
-          <h6> COLOR : {data.color1} / {data.color2} </h6>
+          <h6>
+            {" "}
+            COLOR : {data.color1} / {data.color2}{" "}
+          </h6>
 
           <h6> PRICE : {data.price}</h6>
-    
+
           <Button className="addToCartBtn">ADD TO CART</Button>
         </DescriptionWrapper>
       </MainContainer>
