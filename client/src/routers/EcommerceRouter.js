@@ -33,6 +33,12 @@ export const EcommerceRouter = () => {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
+// <<<<<<< sudha
+// =======
+//         <Route path="/onear" element={<OnEarPage />} />
+//         <Route path="/in-ear" element={<InEarPage />} />
+//         <Route path="/singledescription/:id" element={<SingleDescription />} />
+// >>>>>>> main
       </Routes>
     </Router>
   );
