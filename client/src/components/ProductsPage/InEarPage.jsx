@@ -34,13 +34,25 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
+const Div = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+`
+
+
+
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
   return (
-    <div>
-      <Header />
-      <BigTitle>IN EAR HEADPHONES</BigTitle>
+    <>   
+    <Header />
+
+    <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTER</Button>
+      <Div>
+      
       {inEarProducts.map(prod=>(
         <CardsContainer key={prod.id}>
         <Link to= {`/product/${prod.id}`} style={linkStyle} state={prod}>
@@ -48,6 +60,7 @@ export const InEarPage = () => {
         </Link>
       </CardsContainer>
       ))}
-      </div>
+      </Div>
+      </>
   );
 };
