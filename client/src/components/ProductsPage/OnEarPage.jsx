@@ -12,7 +12,10 @@ const CardsContainer = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
 `;
-
+const linkStyle = {
+  textDecoration: "none",
+  color: "black"
+};
 const BigTitle = styled.h1`
   text-align: center;
   font-size: 3rem;
@@ -37,7 +40,7 @@ export const OnEarPage = () => {
       <Button>FILTER</Button>
       {onEarProducts.map((product) => (
         <CardsContainer key={product.id}>
-          <Link to={`/product/${product.id}`} key={product.id} state={product}>
+          <Link to={`/product/${product.id}`} style={linkStyle} state={product}>
             <Card {...product} />
           </Link>
         </CardsContainer>
