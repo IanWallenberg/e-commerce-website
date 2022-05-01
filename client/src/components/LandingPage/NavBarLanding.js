@@ -1,5 +1,10 @@
 import React from 'react'
 import styled from "styled-components";
+import { Badge } from "@mui/material";
+import ProfileIcon from '@mui/icons-material/PermIdentity';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
 // import Fidelio from "../LandingPage/LogoFidelio.png"
 
 // console.log(Fidelio);
@@ -8,9 +13,9 @@ const Container = styled.div`
 height: 70px;
 `
 
-// const Fidelio = styled.img`
-// background-image: url(./LogoFidelio.png)
-// `
+const Fidelio = styled.img`
+background-image: url(./LogoFidelio.png)
+`
 
 const Wrapper = styled.div`
 padding: 10px 20px;
@@ -59,8 +64,8 @@ z-index: 10;
 const LogoImage = styled.p`
 border: 1px solid white;
 padding: 10px 10px;
-background-color: black;
-color: white;
+background-color: none;
+color: black;
 font-weight: bold;
 z-index: 10;
 
@@ -86,9 +91,13 @@ const NavBarLanding = () => {
         </Menu>
         </Left>
         <FlexDiv>
-        <LogoImage>Cart</LogoImage>
-        <LogoImage>Prof</LogoImage>
-        <LogoImage>Sear</LogoImage>
+        <Link to = "/"><LogoImage>  <SearchIcon/>  </LogoImage></Link>
+      
+        <Link to = "/accountpage"><LogoImage><ProfileIcon/> </LogoImage></Link>
+        
+        <Link to = "/checkout-cart"><LogoImage><Badge>
+                        <ShoppingCartOutlinedIcon  />
+                        </Badge></LogoImage></Link>
         </FlexDiv>
         </Wrapper>
         {/* <Fidelio></Fidelio> */}
