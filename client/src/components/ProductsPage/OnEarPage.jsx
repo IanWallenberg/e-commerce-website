@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { useFetchOnEarProducts } from "../../hooks/useFetchOnEarProduct";
 import Card from "./Card";
@@ -30,14 +31,22 @@ const Button = styled.button`
   padding-left: 50px;
 `;
 
+const Div = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+`
+
 export const OnEarPage = () => {
   const onEarProducts = useFetchOnEarProducts();
 
   return (
-    <div>
+    <>
       <Header />
       <BigTitle>On Ear Products</BigTitle>
       <Button>FILTER</Button>
+      <Div>
       {onEarProducts.map((product) => (
         <CardsContainer key={product.id}>
           <Link to={`/product/${product.id}`} style={linkStyle} state={product}>
@@ -45,6 +54,7 @@ export const OnEarPage = () => {
           </Link>
         </CardsContainer>
       ))}
-    </div>
+      </Div>
+    </>
   );
 };
