@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import OnEar from "../Categories/Img/HP2.jpg";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
-// import dataSlider from "../../OnEarHeadphones.json";
 import { useLocation } from "react-router-dom";
 
 const MainContainer = styled.div`
   display: flex;
   height: 90vh;
-  ${"" /* border: 1px red solid; */}
   align-items: center;
   justify-content: space-around;
   width: 100vw;
@@ -31,7 +28,6 @@ const DescriptionWrapper = styled.div`
   width: 50%;
   padding: 6%;
   background-color: #f8edeb;
-  ${"" /* border: 5px blue solid; */}
   font-size: 12px;
 `;
 
