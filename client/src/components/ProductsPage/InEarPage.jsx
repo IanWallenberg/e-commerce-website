@@ -44,14 +44,13 @@ justify-content: space-around;
 
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
+  
   return (
     <>   
     <Header />
-
     <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTERS</Button>
       <Div>
-      
       {inEarProducts.map(prod=>(
         <CardsContainer key={prod.id}>
         <Link to= {`/product/${prod.id}`} style={linkStyle} state={prod}>
