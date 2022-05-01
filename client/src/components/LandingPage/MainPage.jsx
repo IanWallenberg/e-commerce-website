@@ -20,12 +20,10 @@ justify-content: center;
 `
 
 const Title = styled.h1`
-font-size: 60px;
+font-size: 40px;
 width: 60%;
 margin-bottom: 80px;
 z-index: 10;
-
-
 `
 const Right = styled.div`
 width: 40%;
@@ -44,15 +42,6 @@ width: 60%;
 display: flex;
 z-index: 11;
 `
-
-// const Button = styled.button`
-// padding: 10px;
-// color: black;
-// background-color: pink;
-// border-radius: 10px;
-// z-index: 10;
-// `
-
 const Button = styled.button`
 background-color:  #fff;
 width: 150px;

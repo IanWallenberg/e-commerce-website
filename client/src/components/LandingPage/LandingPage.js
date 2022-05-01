@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import NavBarLanding from './NavBarLanding';
-import MainPage from './MainPage';
+// import MainPage from './MainPage';
+import Slider from './Slider';
 
 const Container = styled.div`
 height: 100vh;
@@ -32,8 +33,9 @@ export const LandingPage = () => {
   return (
     <Container>
     <NavBarLanding/>
-    <MainPage/>
-    <Shape/>
+    {/* <MainPage/> */}
+    <Slider/>
+    {/* <Shape/> */}
     </Container>
   )
 }
