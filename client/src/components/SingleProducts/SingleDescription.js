@@ -52,6 +52,9 @@ export const SingleDescription = () => {
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
       setSlideIndex(slideIndex + 1);
+      //0 not is = 2-1 slidindex = 1
+      // 1
+      //1= 2-1 slideindex=0
     } else if (slideIndex === numberOfImages - 1) {
       setSlideIndex(0);
     }
