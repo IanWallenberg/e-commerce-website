@@ -73,9 +73,28 @@ export const CheckoutPayment = () => {
         </div>
         <div className="container">
           <h3 className="fw-bold p-3"> Payment Details </h3>
-          <div className="container d-flex">
+          <div className="container">
             <p>Card holders name</p>
-            <input className="form-control form-control-lg"></input>
+            <input type="text" className="form-control form-control-lg mb-3"></input>
+            <p>Card Number</p>
+            <input type="number" placeholder="1111 2222 3333 4444" className="form-control form-control-lg mb-3" ></input>
+            <div className="contaniner d-flex ">
+              <p className="col-5 me-5">Expiring</p>
+              <p className="ms-5">CVC CODE</p>
+
+            </div>
+            <div className="d-flex">
+              <input typer="number" placeholder="MM/YY" className="form-control form-control-lg w-50 me-5"></input>
+              <input typer="number" placeholder="123" className="form-control form-control-lg w-50 ms-5"></input>
+            </div>
+            <div className="text-center">
+            <button
+              id="proceed__Button"
+              className="text-center btn btn-dark btn-lg shadow w-50 border-white my-5"
+            >
+              PROCEED
+            </button>
+            </div>
           </div>
         </div>
       </div>
