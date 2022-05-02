@@ -3,16 +3,12 @@ import styled from "styled-components";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import Image from '../Categories/Img/logo.png';
-import { Badge } from "@mui/material";
 import ProfileIcon from '@mui/icons-material/PermIdentity';
 import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
 height: 70px;
-`
-const Fidelio = styled.img`
-background-image: url(./LogoFidelio.png)
 `
 
 const Wrapper = styled.div`
@@ -39,7 +35,7 @@ align-items:center;
 justify-items: center;
 align-items:center;
 z-index: 10; 
-padding-top:40px;
+padding-top:30px;
 `
 const Center = styled.div`
   flex: 2;
@@ -64,18 +60,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-`  
-
-const LogoImage = styled.p`
-border: 1px solid white;
-padding: 10px 10px;
-background-color: none;
-color: black;
-font-weight: bold;
-z-index: 10;
-
-`
-   
+`   
 
 const NavBarLanding = () => {
   return (
@@ -94,23 +79,11 @@ const NavBarLanding = () => {
         </Menu>
         </Center>
         <Right>
-           <MenuItem> <SearchIcon/> </MenuItem>
-           <MenuItem> <ProfileIcon/> </MenuItem>
-           <MenuItem> 
-           <ShoppingCartOutlinedIcon  />
-           </MenuItem>
-                
+        <Link to = "/"> <MenuItem> <SearchIcon/> </MenuItem></Link>
+        <Link to = "/accountpage"> <MenuItem> <ProfileIcon/> </MenuItem></Link>
+        <Link to = "/checkout-cart"><MenuItem> <ShoppingCartOutlinedIcon /></MenuItem></Link>         
         </Right>
 
-        
-        <Link to = "/"><LogoImage>  <SearchIcon/>  </LogoImage></Link>
-      
-        <Link to = "/accountpage"><LogoImage><ProfileIcon/> </LogoImage></Link>
-        
-        <Link to = "/checkout-cart"><LogoImage><Badge>
-                        <ShoppingCartOutlinedIcon  />
-                        </Badge></LogoImage></Link>
-    
         </Wrapper>
         </Container>
         
