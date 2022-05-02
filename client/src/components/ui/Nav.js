@@ -49,6 +49,7 @@ const MenuItem = styled.div`
   font-size: 1.05rem;
   cursor: pointer;
   margin-left: 25px;
+  color: black;
 `;
 
 const Right = styled.div`
@@ -79,20 +80,25 @@ const Nav = () => {
           <MenuItem>About Us</MenuItem>
         </Menu>
       </Center>
-      <Right>
+      <Right><Link to="/" style={{ textDecoration: "none" }}>
         <MenuItem>
-          {" "}
-          <SearchIcon />{" "}
-        </MenuItem>
+        
+          <SearchIcon />
+        </MenuItem></Link>
+        <Link to="/accountpage" style={{ textDecoration: "none" }}>
         <MenuItem>
-          {" "}
-          <ProfileIcon />{" "}
+          <ProfileIcon />
         </MenuItem>
+        </Link>
+
+        <Link to="/checkout-cart" style={{ textDecoration: "none" }}>
         <MenuItem>
           <Badge badgeContent={4} color="primary">
             <ShoppingCartOutlinedIcon />
           </Badge>
         </MenuItem>
+        </Link>
+        
       </Right>
     </Wrapper>
   );

@@ -4,11 +4,8 @@ import Card from "./Card";
 import { useFetchInEarProducts } from "../../hooks/useFetchInEarProducts";
 import { Link } from 'react-router-dom';
 import Nav from '../ui/Nav';
+import img from '../ProductsPage/HeaderGirl.png';
 
-const Header = styled.div`
-  background-image: url("./assets/products-header.png");
-  height: 30%;
-`;
 
 const CardsContainer = styled.div`
   display: flex;
@@ -44,6 +41,15 @@ justify-content: space-evenly;
 width:100%;
 padding: 10px;
 `
+
+const Header = styled.div`
+    background-image: url(${img});
+    width: 100%;
+    height: 70vh;
+    background-repeat:no-repeat;
+    background-position: center center;
+`
+
 
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
