@@ -47,7 +47,7 @@ export const SingleDescription = () => {
 
   const location = useLocation();
   const data = location.state;
-  console.log("data = ", data);
+  console.log("data = ", data,setItemIndex,setNumberOfImages);
 
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
@@ -89,8 +89,7 @@ export const SingleDescription = () => {
           <p> BRAND MODEL : {data.brandModel} </p>
 
           <h6>
-            {" "}
-            COLOR : {data.color1} / {data.color2}{" "}
+            COLOR : {data.color1} / {data.color2}
           </h6>
 
           <h6> PRICE : {data.price}</h6>
