@@ -1,3 +1,20 @@
-# e-commerce-website
-Team 2 E-commerce headphones website for module Code &amp; Collaborate
-Hi This is Jinto
+ E-commerce-website Team 7
+	
+	
+Brief 
+
+Create an e-commerce website 
+Apply Agile method
+
+Time
+4 weeks
+
+Goals
+
+Create E-commerce headphones website 
+
+Apply Agile method
+
+Practice TDD and CI CD
+
+
