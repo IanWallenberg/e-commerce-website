@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Card from "./Card";
 import { useFetchInEarProducts } from "../../hooks/useFetchInEarProducts";
 import { Link } from 'react-router-dom';
+import Nav from '../ui/Nav';
 
 const Header = styled.div`
   background-image: url("./assets/products-header.png");
@@ -48,7 +49,8 @@ export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
   
   return (
-    <>   
+    <>
+    <Nav/>   
     <Header />
     <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTERS</Button>
