@@ -61,18 +61,22 @@ export const CheckoutPayment = () => {
           <div className="card shadow">
             <h5 className="fw-bold"> DETAILS</h5>
             <img
-                className="m-3 bg-dark w-25"
-                src="./assets/Checkout Assets/Done.png"
-                alt="Card cap"
-              />
-              <p id="name__product" className="mt-3">
-                Sony -wh1000xm4 <br /> 3000 kr <br /> QTY: 30
-              </p>
-              <hr/>
+              className="m-3 bg-dark w-25"
+              src="./assets/Checkout Assets/Done.png"
+              alt="Card cap"
+            />
+            <p id="name__product" className="mt-3">
+              Sony -wh1000xm4 <br /> 3000 kr <br /> QTY: 30
+            </p>
+            <hr />
           </div>
         </div>
         <div className="container">
           <h3 className="fw-bold p-3"> Payment Details </h3>
+          <div className="container d-flex">
+            <p>Card holders name</p>
+            <input className="form-control form-control-lg"></input>
+          </div>
         </div>
       </div>
     </>

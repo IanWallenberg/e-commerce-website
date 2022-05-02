@@ -1,12 +1,6 @@
 import "./Card.css";
-import DefaultImg from '../Categories/Img/HP2.jpg'
-
-
-
 
 const Card = ({ image1, brandModel, brand, price }) => {
-
- 
   return (
     <div className="card">
       <div className="colors">
@@ -14,13 +8,16 @@ const Card = ({ image1, brandModel, brand, price }) => {
         <div className="color blue"></div>
         <div className="color black"></div>
       </div>
-
-
-  
-      {image1 ? (<img src= {image1} alt="headphones-logo"></img>):(<img src= {DefaultImg} alt="Product" />)}
-
+      {!image1 ? (
+        <img
+          src="/assets/headphonesLogo.png"
+          alt="headphones-logo"
+          className="product-img"
+        />
+      ) : (
+        <img src={image1} alt="Product" className="product-img" />
+      )}
       <div className="product-info">
-      
         <h3 className="title">{brandModel}</h3>
         <div className="divider"></div>
         <h3 className="thin">{brand}</h3>

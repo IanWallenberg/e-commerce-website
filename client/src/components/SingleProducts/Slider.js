@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Slider.css";
 import { useLocation } from "react-router-dom";
 
