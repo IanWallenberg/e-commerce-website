@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Card from "./Card";
 import { useFetchInEarProducts } from "../../hooks/useFetchInEarProducts";
 import { Link } from 'react-router-dom';
+import Nav from '../ui/Nav';
 
 const Header = styled.div`
   background-image: url("./assets/products-header.png");
@@ -39,14 +40,17 @@ const Div = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-evenly;
+width:100%;
+padding: 10px;
 `
 
 export const InEarPage = () => {
   const inEarProducts = useFetchInEarProducts();
   
   return (
-    <>   
+    <>
+    <Nav/>   
     <Header />
     <BigTitle>IN EAR HEADPHONES</BigTitle>
       <Button>FILTERS</Button>

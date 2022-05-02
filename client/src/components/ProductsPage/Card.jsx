@@ -9,7 +9,11 @@ const Card = ({ image1, brandModel, brand, price }) => {
         <div className="color black"></div>
       </div>
       {!image1 ? (
-        <img src="/assets/headphonesLogo.png" alt="headphones-logo" />
+        <img
+          src="/assets/headphonesLogo.png"
+          alt="headphones-logo"
+          className="product-img"
+        />
       ) : (
         <img src={image1} alt="Product" className="product-img" />
       )}
