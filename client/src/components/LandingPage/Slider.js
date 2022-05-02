@@ -108,11 +108,6 @@ transition: all 0.3s ease 0s;
 }
 `
 
-
-
-
-
-
 const Slider = () => {
 //USE STATE HOOK
 const [slideIndex, setSlideIndex] = useState(0);

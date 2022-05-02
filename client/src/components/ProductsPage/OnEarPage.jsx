@@ -35,7 +35,9 @@ const Div = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-evenly;
+width:100%;
+padding: 10px;
 `
 
 export const OnEarPage = () => {
