@@ -1,20 +1,25 @@
- E-commerce-website Team 7
-	
-	
-Brief 
+E-commerce-website Team 7
+		
+BRIEF 
 
 Create an e-commerce website 
 Apply Agile method
 
-Time
+TIME
 4 weeks
 
-Goals
+GOALS
 
 Create E-commerce headphones website 
-
 Apply Agile method
-
 Practice TDD and CI CD
+Practice pair coding
 
+SOLUTION
+
+LEARNING OUTCOME
+
+TECK STACK 
+
+FUTURE IMPROVEMENT
 
