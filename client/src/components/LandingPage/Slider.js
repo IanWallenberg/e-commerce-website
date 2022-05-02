@@ -13,9 +13,8 @@ height: 100vh;
 display: flex;
 position:relative;
 overflow: hidden;
+
 `
-
-
 const Arrow = styled.div`
 width: 50px;
 height: 50px;
@@ -49,13 +48,15 @@ display: flex;
 align-items:center;
 background-color: #${props => props.bg};
 
+
 `
 
 const ImageContainer = styled.div`
 height:100%;
 /* flex:1; */
 clip-path: polygon(21% 0%, 100% 0%, 100% 100%, 0% 100%);
-
+@media only screen and (max-width:380px) {
+ display:none;}
 `
 
 const Image = styled.img`
@@ -65,18 +66,27 @@ height: 100%;`
 const InfoContainer = styled.div`
 flex:1;
 padding: 50px;
+@media only screen and (max-width:380px) {
+    background-image: url("/assets/HP3a.png");
+    background-size: cover;
+    
+  }
 
 `
 
 const Title = styled.h1`
-font-size:70px;`
+font-size:70px;
+@media only screen and (max-width:380px) {
+  font-size:30px;} `
 
 
 const Description = styled.p`
 margin: 50px  0px;
 font-size: 20px;
 letter-spacing:3px;
-font-weight: 500;`
+font-weight: 500;
+@media only screen and (max-width:380px) {
+  font-size:20px;}`
 
 
 const Button = styled.button`
@@ -95,10 +105,11 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 transition: all 0.3s ease 0s;
 
 @media only screen and (max-width:380px) {  
-   font-size:10px;
+   font-size:16px;
    padding:10px;
-   opacity: 1;
-}
+   height: 40px;
+   width:200px;
+   }
 
 &:hover {
   background-color: #FFF;
