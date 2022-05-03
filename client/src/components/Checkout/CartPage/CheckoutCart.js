@@ -2,11 +2,17 @@ import React from "react";
 import "./styles/checkoutCart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { useGetCartItems } from "../../../hooks/useGetCartItems";
+import Nav from "../../ui/Nav";
 
 export const CheckoutCart = () => {
+  const cartItems = useGetCartItems();
+  console.log(cartItems);
+
   return (
     <>
       {/* THE NAVBAR */}
+      <Nav />
       <div id="Main__container" className="container-fluid">
         <div className="container-sm flex-nowrap d-flex justify-content-center align-items-center p-3">
           <span id="dot__Done" className="mx-2">
@@ -43,28 +49,41 @@ export const CheckoutCart = () => {
         <FontAwesomeIcon icon={faCartShopping} className="fs-1 p-5" />
       </div>
       {/* CARD AND CART PRODUCT */}
-      <div className="container">
-        <div className="row">
-          <div className="card col-3 shadow-lg border rounded ">
-            <div className="d-flex flex-wrap justify-content-start">
-              <img
-                className="m-3 bg-dark "
-                src="./assets/Checkout Assets/Done.png"
-                alt="Card cap"
-              />
-              <p id="name__product" className="mt-3 ">
-                Sony -wh1000xm4 <br /> 3000 kr <br /> QTY: 30
-              </p>
-              <FontAwesomeIcon icon={faTrashCan} className="fs-5 mt-3 col-3" />
-            </div>
-            <hr className="mx-4" />
-            <div className="card-body  d-flex justify-content-between ">
-              <h5 className="card-title strong">PRICE <br/> SHIPPING <br/> TAX</h5>
-              <p className="card-text text-end">3000 KR <br/> 0 KR <br/> 319 KR  </p>
+      {cartItems.map((cartItem) => (
+        <div className="container">
+          <div className="row">
+            <div
+              key={cartItem.id}
+              className="card col-3 shadow-lg border rounded "
+            >
+              <div className="d-flex flex-wrap justify-content-start">
+                <img
+                  className="m-3 bg-dark "
+                  src={cartItem.image1}
+                  alt="Card cap"
+                />
+                <p id="name__product" className="mt-3 ">
+                  {cartItem.brandModel} <br /> {cartItem.price} <br /> QTY: 30
+                </p>
+                <FontAwesomeIcon
+                  icon={faTrashCan}
+                  className="fs-5 mt-3 col-3"
+                />
+              </div>
+              <hr className="mx-4" />
+              <div className="card-body  d-flex justify-content-between ">
+                <h5 className="card-title strong">
+                  PRICE <br /> SHIPPING <br /> TAX
+                </h5>
+                <p className="card-text text-end">
+                  ${cartItem.price} <br /> $0 <br /> $319{" "}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
+
       {/* REEDEM CODE */}
       <div className="container p-5 d-flex flex-wrap justify-content-center">
         <h3 id="Bottom_Title" className="px-5 align-text-bottom">
