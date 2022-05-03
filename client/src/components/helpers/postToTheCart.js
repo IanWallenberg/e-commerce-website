@@ -29,6 +29,7 @@ export const addToCart = (body) => {
     body: JSON.stringify({
       brand: body.brand,
       price: body.price,
+      brandModel: body.brandModel,
     }),
 
     // Adding headers to the request

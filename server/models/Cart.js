@@ -3,13 +3,20 @@ mongoose.pluralize(null);
 
 const CartSchema = new mongoose.Schema({
   brand: String,
-  // brandModel: String,
-  // color1: String,
-  // color2: String,
-  // id: String,
-  // image1: [],
-  // image2: [],
+  brandModel: String,
   price: Number,
+  color: {
+    primary: {
+      colorName: String,
+      images: [],
+      quantity: Number,
+    },
+    secondary: {
+      colorName: String,
+      images: [],
+      quantity: Number,
+    },
+  },
 });
 
 const Cart = mongoose.model("cart", CartSchema);

@@ -29,7 +29,7 @@ const DescriptionWrapper = styled.div`
   width: 50%;
   padding: 6%;
   background-color: #f8edeb;
-  font-size: 12px;
+  font-size: 18px;
 `;
 
 const Button = styled.button`
@@ -89,14 +89,13 @@ export const SingleDescription = () => {
         ></Slider>
 
         <DescriptionWrapper className="descriptionWrapper">
-          <h6> BRAND: {data.brand} </h6>
-          <p> BRAND MODEL : {data.brandModel} </p>
-
-          <h6>
+        <h2> {data.brand} </h2>
+        <h5> {data.brandModel} </h5>
+                  <h6>
             COLOR : {data.color1} / {data.color2}
           </h6>
 
-          <h6> PRICE : {data.price}</h6>
+          <h5> PRICE : ${data.price}</h5>
 
           <Button className="addToCartBtn" onClick={() => addToCart(data)}>
             ADD TO CART

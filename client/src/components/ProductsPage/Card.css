@@ -10,8 +10,8 @@
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 20px;
-    width: 250px;
-    height:500px;
+    width: 300px;
+    height:470px;
     margin: 20px 0;
     box-shadow: 2px 2px 10px 5px grey;
     cursor: pointer;
@@ -40,7 +40,7 @@
 }
 
 .color.red {
-    background-color: red;
+    background-color: rgb(144, 8, 8);
 }
 
 .color.black {
@@ -48,7 +48,7 @@
 }
 
 .color.blue {
-    background-color: blue;
+    background-color: rgb(0, 114, 120);
 }
 
 h3 {
@@ -72,13 +72,13 @@ h3 {
 }
 
 h3.thin {
-    font-weight: 200;
+    font-weight: 160;
 }
 
 .price {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .product-info .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
