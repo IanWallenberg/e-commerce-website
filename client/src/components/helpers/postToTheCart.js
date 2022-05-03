@@ -1,25 +1,3 @@
-// export const addToCart = (body) => {
-//   const URL = `http://localhost:5000/cart`;
-//   return fetch({
-//     method: "post",
-//     url: `${URL}/`,
-//     headers: {
-//       " Accept": "application/json",
-//       "Content-Type": "application/json",
-//     },
-
-//     body: JSON.stringify(body),
-//   })
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
-// };
-
-// POST request using fetch()
-
 export const addToCart = (body) => {
   fetch("http://localhost:5000/cart", {
     // Adding method type
@@ -30,6 +8,7 @@ export const addToCart = (body) => {
       brand: body.brand,
       price: body.price,
       brandModel: body.brandModel,
+      image1: body.image1[0],
     }),
 
     // Adding headers to the request

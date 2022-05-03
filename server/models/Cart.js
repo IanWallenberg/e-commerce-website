@@ -5,6 +5,7 @@ const CartSchema = new mongoose.Schema({
   brand: String,
   brandModel: String,
   price: Number,
+  image1: String,
   color: {
     primary: {
       colorName: String,
