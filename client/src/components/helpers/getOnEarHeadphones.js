@@ -19,5 +19,3 @@ export const getOnEarHeadphones = async () => {
   });
   return products;
 };
-
-//Delete me
