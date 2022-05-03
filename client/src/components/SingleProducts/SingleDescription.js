@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Nav from "../ui/Nav";
 import Slider from "./Slider";
 import { useLocation } from "react-router-dom";
+import { addToCart } from "../helpers/postToTheCart";
 
 const MainContainer = styled.div`
   display: flex;
@@ -47,7 +48,7 @@ export const SingleDescription = () => {
 
   const location = useLocation();
   const data = location.state;
-  console.log("data = ", data,setItemIndex,setNumberOfImages);
+  console.log("data = ", data, setItemIndex, setNumberOfImages);
 
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
@@ -97,7 +98,9 @@ export const SingleDescription = () => {
 
           <h6> PRICE : {data.price}</h6>
 
-          <Button className="addToCartBtn">ADD TO CART</Button>
+          <Button className="addToCartBtn" onClick={() => addToCart(data)}>
+            ADD TO CART
+          </Button>
         </DescriptionWrapper>
       </MainContainer>
     </>

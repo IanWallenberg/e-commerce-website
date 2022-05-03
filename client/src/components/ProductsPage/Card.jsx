@@ -21,7 +21,9 @@ const Card = ({ image1, brandModel, brand, price }) => {
         <h3 className="title">{brandModel}</h3>
         <div className="divider"></div>
         <h3 className="thin">{brand}</h3>
-        <h3 className="price">{price} KR</h3>
+        <h3 className="price">
+          <strong>$</strong> {price}
+        </h3>
       </div>
     </div>
   );

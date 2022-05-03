@@ -7,6 +7,7 @@ const Container = styled.div`
   height: 100vh;
   overflow: hidden;
   background-color: white;
+
 `;
 
 export const LandingPage = () => {

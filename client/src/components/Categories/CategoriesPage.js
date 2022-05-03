@@ -75,7 +75,7 @@ margin-top:-200px;
 } 
 
 `
-const DivH1= styled.h1`
+const DivH1 = styled.h1`
 color: #FEC5BB;
 margin-left:30px;
 font-family:'verdana';
@@ -88,7 +88,7 @@ z-index:2;
     
 } `
 
-const DivP= styled.p`
+const DivP = styled.p`
 color: black;
 font-family: verdana;
 font-size:16px;
@@ -179,48 +179,44 @@ background-position: right ;
 
 `
 
- const FooterContainer = styled.div`
+const FooterContainer = styled.div`
  `
 
 export const CategoriesPage = () => {
-  return (
-    <Container>
-      <Nav/>
-      <CategoriesOnEar> 
-       <Div1> </Div1>
-       <Div2>
-         <DivText>
-           <DivH1>ON EAR</DivH1>
-          <DivP> WH-1000XM4
-JUST MUSIC. NOTHING ELSE.
-It just you and the music when using the WH-1000XM4 headphones. Try the easy way to less noise and cleaner sound, where smart technology automatically makes the experience more personal. </DivP>
-<Link to = "/product/onear">
-   <Button> SEE ALL </Button>
-</Link>
-         </DivText> 
-       </Div2>       
-      </CategoriesOnEar>
-      <CategoriesInEar>
-        <Div3>
-        <DivText>
-           <DivH1>IN EAR</DivH1>
-          <DivP> WH-1000XM4
-JUST MUSIC. NOTHING ELSE.
-It just you and the music when using the WH-1000XM4 headphones. Try the easy way to less noise and cleaner sound, where smart technology automatically makes the experience more personal. </DivP>
-<Link to = "/product/inear">  
-   <Button> SEE ALL </Button>
-</Link>
-         </DivText> 
-        </Div3>
-        <Div4></Div4>
-      </CategoriesInEar> 
-      <FooterContainer>
-       <Newsletter/>  
-      
-      </FooterContainer>
-       
-    </Container>   
-   
-    
-  )
+   return (
+      <Container>
+         <Nav />
+         <CategoriesOnEar>
+            <Div1> </Div1>
+            <Div2>
+               <DivText>
+                  <DivH1>ON EAR</DivH1>
+                  <DivP> On-ear headphones are usually more compact than over-ear designs. They have smaller ear cups that rest on the ears and also slightly less bass. Who should buy on-ear headphones? Listeners who want a decently comfortable fit in a more compact design. </DivP>
+                  <Link to="/product/onear">
+                     <Button> SEE ALL </Button>
+                  </Link>
+               </DivText>
+            </Div2>
+         </CategoriesOnEar>
+         <CategoriesInEar>
+            <Div3>
+               <DivText>
+                  <DivH1>IN EAR</DivH1>
+                  <DivP> Also known as in-ears, earbuds, canal phones, earphones or IEMs, this coupling method between the headphone and the ear gives much more presentation. Regardless of the many names given to this type of headphones, their ability to fit inside your ear and provide a complete or partial seal are vital issues that affect their performance. </DivP>
+                  <Link to="/product/inear">
+                     <Button> SEE ALL </Button>
+                  </Link>
+               </DivText>
+            </Div3>
+            <Div4></Div4>
+         </CategoriesInEar>
+         <FooterContainer>
+            <Newsletter />
+
+         </FooterContainer>
+
+      </Container>
+
+
+   )
 }
