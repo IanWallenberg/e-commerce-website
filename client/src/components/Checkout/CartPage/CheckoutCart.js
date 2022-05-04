@@ -8,6 +8,7 @@ import Nav from "../../ui/Nav";
 export const CheckoutCart = () => {
   const cartItems = useGetCartItems();
   console.log(cartItems);
+  console.log("cartItemsN", cartItems);
 
   return (
     <>
@@ -58,9 +59,11 @@ export const CheckoutCart = () => {
             >
               <div className="d-flex flex-wrap justify-content-start">
                 <img
+                  key={cartItem.id}
                   className="m-3 bg-dark "
                   src={cartItem.image1}
                   alt="Card cap"
+                  style={{ height: "100px" }}
                 />
                 <p id="name__product" className="mt-3 ">
                   {cartItem.brandModel} <br /> {cartItem.price} <br /> QTY: 30

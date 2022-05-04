@@ -8,6 +8,7 @@ import { SingleDescription } from "../components/SingleProducts/SingleDescriptio
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/ui/Footer";
 import CartPage from "../components/Checkout/CartPage/Cart";
+import { CheckoutCart } from "../components/Checkout/CartPage/CheckoutCart";
 
 import { AccountPage } from "../components/ProfilePage/AccountPage";
 
@@ -30,6 +31,7 @@ export const EcommerceRouter = () => {
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkoutcart" element={<CheckoutCart />} />
       </Routes>
     </Router>
   );

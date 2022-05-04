@@ -142,7 +142,7 @@ const Button = styled.button`
 
 const CartPage = () => {
   const cartItems = useGetCartItems(); // Get the Cart Items
-  console.log("cartItems",cartItems);
+  console.log("cartItems", cartItems);
 
   return (
     <Container>
@@ -158,37 +158,41 @@ const CartPage = () => {
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
         </Top>
-        {cartItems.map((cartItem) => (
-          console.log("estae s la buena ", cartItem),
-          <Bottom key={cartItem.id}>
-            <Info>
-              <Product>
-                <ProductDetail >
-                  <Image src={cartItem.image1}></Image>
-                  <Details>
-                    <ProductName>
-                      <b>Brand:</b> {cartItem.brand}
-                    </ProductName>
-                    <ProductName>
-                      <b>Model:</b> {cartItem.brandModel}
-                    </ProductName>
+        {cartItems.map(
+          (cartItem) => (
+            console.log("estae s la buena ", cartItem),
+            (
+              <Bottom key={cartItem.id}>
+                <Info>
+                  <Product>
+                    <ProductDetail>
+                      <Image src={cartItem.image1}></Image>
+                      <Details>
+                        <ProductName>
+                          <b>Brand:</b> {cartItem.brand}
+                        </ProductName>
+                        <ProductName>
+                          <b>Model:</b> {cartItem.brandModel}
+                        </ProductName>
 
-                    <ProductColor color={cartItem.color} />
-                  </Details>
-                </ProductDetail>
-                <PriceDetail>
-                  <ProductAmountContainer>
-                    <AddIcon />
-                    <ProductAmount>{cartItem.quantityToBuy}</ProductAmount>
-                    <RemoveIcon />
-                  </ProductAmountContainer>
-                  <ProductPrice> {cartItem.price}KR</ProductPrice>
-                </PriceDetail>
-              </Product>
-              <Hr />
-            </Info>
-          </Bottom>
-        ))}
+                        <ProductColor color={cartItem.color} />
+                      </Details>
+                    </ProductDetail>
+                    <PriceDetail>
+                      <ProductAmountContainer>
+                        <AddIcon />
+                        <ProductAmount>{cartItem.quantityToBuy}</ProductAmount>
+                        <RemoveIcon />
+                      </ProductAmountContainer>
+                      <ProductPrice> {cartItem.price}KR</ProductPrice>
+                    </PriceDetail>
+                  </Product>
+                  <Hr />
+                </Info>
+              </Bottom>
+            )
+          )
+        )}
       </Wrapper>
       <Summary>
         <SummaryTitle> ORDER SUMMARY</SummaryTitle>
@@ -208,7 +212,7 @@ const CartPage = () => {
           <SummaryItemText>Total</SummaryItemText>
           <SummaryItemPrice> 1760 KR</SummaryItemPrice>
         </SummaryItem>
-        <Link to="/checkout-Payment">
+        <Link to="/checkoutcart">
           <Button>CHECKOUT NOW</Button>
         </Link>
       </Summary>
