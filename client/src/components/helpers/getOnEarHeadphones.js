@@ -6,6 +6,7 @@ export const getOnEarHeadphones = async () => {
   const products = await data.map((product) => {
     return {
       id: product._id,
+      // productId: product.productId,
       brand: product.brand,
       brandModel: product.brandModel,
       price: product.price,

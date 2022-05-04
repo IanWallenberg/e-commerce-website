@@ -14,5 +14,6 @@ export const useGetCartItems = () => {
         setCartItems(cartItem);
       });
   }, []);
+  // console.log(cartItems)
   return cartItems;
 };

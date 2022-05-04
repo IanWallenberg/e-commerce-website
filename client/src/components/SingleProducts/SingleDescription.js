@@ -4,6 +4,7 @@ import Nav from "../ui/Nav";
 import Slider from "./Slider";
 import { useLocation } from "react-router-dom";
 import { addToCart } from "../helpers/postToTheCart";
+// import { useGetCartItems } from "../../hooks/useGetCartItems";
 
 const MainContainer = styled.div`
   display: flex;
@@ -44,11 +45,13 @@ const Button = styled.button`
 export const SingleDescription = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [itemIndex, setItemIndex] = useState(1);
+  // const [quantityToBuy, setQuantityToBuy] = useState(1);
   const [numberOfImages, setNumberOfImages] = useState(2);
 
   const location = useLocation();
   const data = location.state;
-  
+  // data.quantityToBuy = quantityToBuy;
+  // console.log("esta es la buena ", data);
 
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
@@ -73,6 +76,17 @@ export const SingleDescription = () => {
     setSlideIndex(index);
   };
 
+  // const cartItems = useGetCartItems();
+  // console.log("carrito", cartItems);
+
+  // const validateProduct = () => {
+  //   const exist = cartItems.includes(data.productId)
+  //   console.log(data)
+  //   console.log('pruebaaaaaaaaaaaaaaaa',exist)
+  // }
+
+  // validateProduct()
+
   return (
     <>
       <Nav />
@@ -96,7 +110,6 @@ export const SingleDescription = () => {
           </h6>
 
           <h5> PRICE : ${data.price}</h5>
-          
           <Button className="addToCartBtn" onClick={() => addToCart(data)}>
             ADD TO CART
           </Button>

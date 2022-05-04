@@ -142,7 +142,7 @@ const Button = styled.button`
 
 const CartPage = () => {
   const cartItems = useGetCartItems(); // Get the Cart Items
-  console.log(cartItems);
+  console.log("cartItems",cartItems);
 
   return (
     <Container>
@@ -159,10 +159,11 @@ const CartPage = () => {
           </TopTexts>
         </Top>
         {cartItems.map((cartItem) => (
-          <Bottom>
+          console.log("estae s la buena ", cartItem),
+          <Bottom key={cartItem.id}>
             <Info>
               <Product>
-                <ProductDetail key={cartItem.id}>
+                <ProductDetail >
                   <Image src={cartItem.image1}></Image>
                   <Details>
                     <ProductName>
@@ -171,16 +172,14 @@ const CartPage = () => {
                     <ProductName>
                       <b>Model:</b> {cartItem.brandModel}
                     </ProductName>
-                    <ProductId>
-                      <b>ID:</b> {cartItem.id}
-                    </ProductId>
+
                     <ProductColor color={cartItem.color} />
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
                     <AddIcon />
-                    <ProductAmount>2</ProductAmount>
+                    <ProductAmount>{cartItem.quantityToBuy}</ProductAmount>
                     <RemoveIcon />
                   </ProductAmountContainer>
                   <ProductPrice> {cartItem.price}KR</ProductPrice>
