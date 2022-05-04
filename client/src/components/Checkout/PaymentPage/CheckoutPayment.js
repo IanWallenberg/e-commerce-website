@@ -2,10 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCreditCardAlt } from "@fortawesome/free-solid-svg-icons";
 import "./styles/checkoutPayment.css";
+import Nav from "../../ui/Nav";
 
 export const CheckoutPayment = () => {
   return (
     <>
+    <Nav/>
       <div id="Main__container" className="container-fluid">
         <div className="container-sm flex-nowrap d-flex justify-content-center align-items-center p-3">
           <span id="dot__Done" className="mx-2">
