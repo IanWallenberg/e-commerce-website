@@ -7,12 +7,12 @@ import ProfileIcon from "@mui/icons-material/PermIdentity";
 import Image from "../Categories/Img/logo.png";
 import { Link } from "react-router-dom";
 
-const Container = styled.div`
-  width: 100%;
-  height: 10vh;
-  background-color: #f8edeb;
-  justify-items: space-around;
-`;
+// const Container = styled.div`
+//   width: 100%;
+//   height: 10vh;
+//   background-color: #f8edeb;
+//   justify-items: space-around;
+// `;
 
 const Wrapper = styled.div`
   padding: 10px 20px;

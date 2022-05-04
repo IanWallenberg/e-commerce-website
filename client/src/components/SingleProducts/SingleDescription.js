@@ -5,6 +5,7 @@ import Slider from "./Slider";
 import { useLocation } from "react-router-dom";
 import { addToCart } from "../helpers/postToTheCart";
 
+
 const MainContainer = styled.div`
   display: flex;
   height: 90vh;
