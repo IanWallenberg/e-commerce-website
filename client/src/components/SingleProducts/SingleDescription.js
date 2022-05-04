@@ -5,7 +5,6 @@ import Slider from "./Slider";
 import { useLocation } from "react-router-dom";
 import { addToCart } from "../helpers/postToTheCart";
 
-
 const MainContainer = styled.div`
   display: flex;
   height: 90vh;
@@ -49,7 +48,7 @@ export const SingleDescription = () => {
 
   const location = useLocation();
   const data = location.state;
-  console.log("data = ", data, setItemIndex, setNumberOfImages);
+  
 
   const nextSlide = () => {
     if (slideIndex !== numberOfImages - 1) {
@@ -90,14 +89,14 @@ export const SingleDescription = () => {
         ></Slider>
 
         <DescriptionWrapper className="descriptionWrapper">
-        <h2> {data.brand} </h2>
-        <h5> {data.brandModel} </h5>
-                  <h6>
+          <h2> {data.brand} </h2>
+          <h5> {data.brandModel} </h5>
+          <h6>
             COLOR : {data.color1} / {data.color2}
           </h6>
 
           <h5> PRICE : ${data.price}</h5>
-
+          
           <Button className="addToCartBtn" onClick={() => addToCart(data)}>
             ADD TO CART
           </Button>

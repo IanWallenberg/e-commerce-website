@@ -91,7 +91,7 @@ const Nav = () => {
         </MenuItem>
         </Link>
 
-        <Link to="/checkout-cart" style={{ textDecoration: "none" }}>
+        <Link to="cart" style={{ textDecoration: "none" }}>
         <MenuItem>
           <Badge badgeContent={4} color="primary">
             <ShoppingCartOutlinedIcon />

@@ -1,8 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CheckoutCart } from "../components/Checkout/CartPage/CheckoutCart";
-import { CheckoutDelivery } from "../components/Checkout/DeliveryPage/CheckoutDelivery";
-import { CheckoutPayment } from "../components/Checkout/PaymentPage/CheckoutPayment";
 import { LandingPage } from "../components/LandingPage/LandingPage";
 import { CategoriesPage } from "../components/Categories/CategoriesPage";
 import { LoginScreen } from "../components/Registration/LoginScreen";
@@ -27,15 +24,13 @@ export const EcommerceRouter = () => {
         <Route path="/categories" element={<Footer />} />
         <Route path="/product/onear" element={<OnEarPage />} />
         <Route path="/product/inear" element={<InEarPage />} />
-        <Route path="/product/:pid"   element={<SingleDescription />} />
-        <Route path="/checkout-Cart" element={<CheckoutCart />} />
-        <Route path="/checkout-Delivery" element={<CheckoutDelivery />} />
-        <Route path="/checkout-Payment" element={<CheckoutPayment />} />
+        <Route path="/product/:pid" element={<SingleDescription />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registerscreen" element={<RegisterScreen />} />
         <Route path="/accountpage" element={<AccountPage />} />
         <Route path="/cart" element={<CartPage />} />
-     </Routes>
+      </Routes>
     </Router>
   );
 };

@@ -1,59 +1,58 @@
 import React from "react";
 import Nav from "../../ui/Nav";
 import Footer from "../../ui/Footer";
-import styled from 'styled-components';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
+import styled from "styled-components";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 import { Link } from "react-router-dom";
 import { useGetCartItems } from "../../../hooks/useGetCartItems";
 
-const Container = styled.div`
-
-`
+const Container = styled.div``;
 
 const Wrapper = styled.div`
-padding: 20px;
-`
+  padding: 20px;
+`;
 const Title = styled.h1`
-font-weight: 300px;
-text-align: center;
-`
+  font-weight: 300px;
+  text-align: center;
+`;
 const Top = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 10px;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+`;
 const TopButton = styled.button`
-padding: 10px;
-font-weight: 400;
-cursor: pointer;
-border : ${props => props.type === "filled" && "none"};
-background-color : ${props => props.type === "filled" ? "black" : "transparent"};
-color : ${props => props.type === "filled" && "white"}
-`
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  border: ${(props) => props.type === "filled" && "none"};
+  background-color: ${(props) =>
+    props.type === "filled" ? "black" : "transparent"};
+  color: ${(props) => props.type === "filled" && "white"};
+`;
 
-const TopTexts = styled.div`
-`
+const TopTexts = styled.div``;
 const TopText = styled.span`
-text-decoration: underline;
-cursor: pointer;
-margin: 0px, 10px;
-padding: 20px;`
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px, 10px;
+  padding: 20px;
+`;
 
 const Bottom = styled.div`
-display: flex;
-justify-content: space-between;
-padding-bottom: 20px;
-`
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+`;
 const Info = styled.div`
-flex:3;`
+  flex: 3;
+`;
 
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-  
-`
+`;
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
@@ -89,35 +88,32 @@ const PriceDetail = styled.div`
 `;
 
 const ProductAmountContainer = styled.div`
-display: flex;
-align-items:center;
-margin-bottom: 20px;`
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
 
 const ProductAmount = styled.div`
   font-size: 24px;
-  margin: 5px;`
-
+  margin: 5px;
+`;
 
 const ProductPrice = styled.div`
   font-size: 30px;
-  font-weight: 200;`
+  font-weight: 200;
+`;
 
-
-const Hr = styled.hr`
- 
-`;  
+const Hr = styled.hr``;
 
 const Summary = styled.div`
-  flex:1;
+  flex: 1;
   border: 0.5px solid lightgray;
   border-radius: 10px;
   padding: 20px;
   height: 70vh;
-  width:40vw;
-  margin-left:40px;
- 
-`
+  width: 40vw;
+  margin-left: 40px;
+`;
 
 const SummaryTitle = styled.h1`
   font-weight: 100;
@@ -145,78 +141,81 @@ const Button = styled.button`
 `;
 
 const CartPage = () => {
+  const cartItems = useGetCartItems(); // Get the Cart Items
+  console.log(cartItems);
 
+  return (
+    <Container>
+      <Nav />
+      <Wrapper>
+        <Title> YOUR CART</Title>
+        <Top>
+          <Link to="/categories">
+            <TopButton>CONTINUE SHOPPING </TopButton>
+          </Link>
+          <TopTexts>
+            <TopText>Shopping Cart (2)</TopText>
+            <TopText>Your Wishlist (0)</TopText>
+          </TopTexts>
+        </Top>
+        {cartItems.map((cartItem) => (
+          <Bottom>
+            <Info>
+              <Product>
+                <ProductDetail key={cartItem.id}>
+                  <Image src={cartItem.image1}></Image>
+                  <Details>
+                    <ProductName>
+                      <b>Brand:</b> {cartItem.brand}
+                    </ProductName>
+                    <ProductName>
+                      <b>Model:</b> {cartItem.brandModel}
+                    </ProductName>
+                    <ProductId>
+                      <b>ID:</b> {cartItem.id}
+                    </ProductId>
+                    <ProductColor color={cartItem.color} />
+                  </Details>
+                </ProductDetail>
+                <PriceDetail>
+                  <ProductAmountContainer>
+                    <AddIcon />
+                    <ProductAmount>2</ProductAmount>
+                    <RemoveIcon />
+                  </ProductAmountContainer>
+                  <ProductPrice> {cartItem.price}KR</ProductPrice>
+                </PriceDetail>
+              </Product>
+              <Hr />
+            </Info>
+          </Bottom>
+        ))}
+      </Wrapper>
+      <Summary>
+        <SummaryTitle> ORDER SUMMARY</SummaryTitle>
+        <SummaryItem>
+          <SummaryItemText> Vat </SummaryItemText>
+          <SummaryItemPrice> 60 KR </SummaryItemPrice>
+        </SummaryItem>
+        <SummaryItem>
+          <SummaryItemText>Estimated Shipping</SummaryItemText>
+          <SummaryItemPrice> 30 KR </SummaryItemPrice>
+        </SummaryItem>
+        <SummaryItem>
+          <SummaryItemText>Shipping Discount</SummaryItemText>
+          <SummaryItemPrice> -30 KR </SummaryItemPrice>
+        </SummaryItem>
+        <SummaryItem type="total">
+          <SummaryItemText>Total</SummaryItemText>
+          <SummaryItemPrice> 1760 KR</SummaryItemPrice>
+        </SummaryItem>
+        <Link to="/checkout-Payment">
+          <Button>CHECKOUT NOW</Button>
+        </Link>
+      </Summary>
+      <Footer />
+    </Container>
+  );
+};
 
-const cartItems = useGetCartItems(); // Get the Cart Items
-console.log(cartItems);
-
-
-    return ( 
-        <Container>
-            <Nav/>
-           <Wrapper>
-               <Title> YOUR CART</Title>
-               <Top>
-               <Link to = "/categories"><TopButton>CONTINUE SHOPPING </TopButton></Link>
-               <TopTexts>
-                   <TopText>Shopping Cart (2)</TopText>
-                   <TopText>Your Wishlist (0)</TopText>
-               </TopTexts>   
-               </Top>
-               {cartItems.map((cartItem)=>(
-               <Bottom>
-               <Info>
-               <Product>
-               <ProductDetail key={cartItem.id}>
-               <Image src = {cartItem.image1}></Image>
-               <Details>
-                <ProductName><b>Brand:</b>  {cartItem.brand} </ProductName>
-                <ProductName><b>Model:</b>  {cartItem.brandModel} </ProductName>
-                <ProductId>
-                    <b>ID:</b> {cartItem.id}
-                  </ProductId>
-                  <ProductColor color= {cartItem.color} />
-               </Details>
-               </ProductDetail>
-               <PriceDetail>
-               <ProductAmountContainer>
-                  <AddIcon />
-                  <ProductAmount>2</ProductAmount>
-                  <RemoveIcon />
-                </ProductAmountContainer>
-                <ProductPrice> {cartItem.price}KR</ProductPrice>
-               </PriceDetail>
-               </Product>  
-               <Hr />
-               </Info>
-               
-               </Bottom>
-        
-               ))}
-           </Wrapper>
-           <Summary>
-                <SummaryTitle> ORDER SUMMARY</SummaryTitle>
-                <SummaryItem>
-                    <SummaryItemText> Vat </SummaryItemText>
-                    <SummaryItemPrice> 60 KR </SummaryItemPrice>
-                </SummaryItem>
-                <SummaryItem>
-                    <SummaryItemText>Estimated Shipping</SummaryItemText>
-                    <SummaryItemPrice> 30 KR </SummaryItemPrice>
-                </SummaryItem>
-                <SummaryItem>
-                    <SummaryItemText>Shipping Discount</SummaryItemText>
-                    <SummaryItemPrice> -30 KR </SummaryItemPrice>
-                </SummaryItem>
-                <SummaryItem type="total">
-                    <SummaryItemText>Total</SummaryItemText>
-                    <SummaryItemPrice> 1760 KR</SummaryItemPrice>
-                </SummaryItem>
-                <Link to ="/checkout-Payment"><Button>CHECKOUT NOW</Button></Link>
-               </Summary> 
-            <Footer />
-        </Container>
-     );
-}
- 
 export default CartPage;

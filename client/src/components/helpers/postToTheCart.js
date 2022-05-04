@@ -8,7 +8,7 @@ export const addToCart = (body) => {
       brand: body.brand,
       price: body.price,
       brandModel: body.brandModel,
-      image1: body.image1[0],
+      image1: body.image1[0]
     }),
 
     // Adding headers to the request
