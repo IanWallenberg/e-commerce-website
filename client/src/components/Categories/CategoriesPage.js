@@ -54,7 +54,6 @@ background-size: 400px;
 background-position: right;
 opacity: 0.5;
 
-
 @media only screen and (max-width:380px) {
    width: 100%;
    height:46vh;
