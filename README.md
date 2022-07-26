@@ -3,7 +3,7 @@ E-commerce-website Team 2
 		
 BRIEF 
 -----
-Create an e-commerce website 
+Create an e-commerce website and 
 Apply Agile method
 
 TIME

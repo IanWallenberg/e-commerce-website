@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { useGetCartItems } from "../../../hooks/useGetCartItems";
 import Nav from "../../ui/Nav";
+import { Link } from "react-router-dom";
 
 export const CheckoutCart = () => {
   const cartItems = useGetCartItems();
@@ -124,12 +125,15 @@ export const CheckoutCart = () => {
         </div>
         {/* FINAL BUTTON */}
         <div className="container d-flex justify-content-center mt-5">
-          <button
-            id="proceed__Button"
+          <Link
+            to="/checkoutpayment"
             className="text-center btn btn-dark btn-lg shadow-sm w-25 border-white"
+            id="proceed__Button"
           >
-            PROCEED
-          </button>
+            <button id="proceed__Button" style={{ border: "none" }}>
+              PROCEED
+            </button>
+          </Link>
         </div>
       </div>
     </>
